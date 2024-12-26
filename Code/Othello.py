@@ -25,10 +25,10 @@ class Othello:
         return f"{chr(col + ord('a'))}{row + 1}"
 
     def display_board(self):
-        print("\n  a b c d e f g h")
+        print()  # Add empty line for better readability
         for i, row in enumerate(self.board):
             print(f"{i + 1} {' '.join(row)}")
-        print()  # Add empty line for better readability
+        print("  a b c d e f g h")  # Column labels
 
     def is_valid_move(self, row, col, player):
         if not (0 <= row < 8 and 0 <= col < 8) or self.board[row][col] != ".":
