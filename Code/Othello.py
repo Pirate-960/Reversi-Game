@@ -1,5 +1,7 @@
 import copy
 import time
+import json
+from datetime import datetime
 
 class Othello:
     def __init__(self):
@@ -8,12 +10,35 @@ class Othello:
         self.board[3][4], self.board[4][3] = "X", "X"
         self.current_player = "X"
         self.move_history = []
+        self.game_log = {
+            'game_id': datetime.now().strftime('%Y%m%d_%H%M%S'),
+            'start_time': datetime.now().isoformat(),
+            'moves': [],
+            'initial_state': self.get_board_state()
+        }
+
+    def get_board_state(self):
+        """Get current board state with disc positions"""
+        state = {
+            'board': [row[:] for row in self.board],
+            'disc_positions': {
+                'X': [],
+                'O': []
+            }
+        }
+        for i in range(8):
+            for j in range(8):
+                if self.board[i][j] == 'X':
+                    state['disc_positions']['X'].append(self.numeric_to_algebraic(i, j))
+                elif self.board[i][j] == 'O':
+                    state['disc_positions']['O'].append(self.numeric_to_algebraic(i, j))
+        return state
 
     def algebraic_to_numeric(self, move):
         """Convert algebraic notation (e.g., 'e3') to numeric coordinates (row, col)"""
         try:
             col = ord(move[0].lower()) - ord('a')
-            row = int(move[1]) - 1
+            row = 8 - int(move[1])
             if 0 <= row < 8 and 0 <= col < 8:
                 return row, col
             return None
@@ -22,13 +47,13 @@ class Othello:
 
     def numeric_to_algebraic(self, row, col):
         """Convert numeric coordinates to algebraic notation"""
-        return f"{chr(col + ord('a'))}{row + 1}"
+        return f"{chr(col + ord('a'))}{8 - row}"
 
     def display_board(self):
-        print()  # Add empty line for better readability
-        for i, row in enumerate(self.board):
-            print(f"{i + 1} {' '.join(row)}")
-        print("  a b c d e f g h")  # Column labels
+        print()
+        for i in range(8):
+            print(f"{8-i} {' '.join(self.board[i])}")
+        print("  a b c d e f g h")
 
     def is_valid_move(self, row, col, player):
         if not (0 <= row < 8 and 0 <= col < 8) or self.board[row][col] != ".":
@@ -81,12 +106,35 @@ class Othello:
                 for pr, pc in path:
                     self.board[pr][pc] = player
 
-        # Record the move and number of flips
-        self.move_history.append({
+        # Record move details
+        flipped_positions = [self.numeric_to_algebraic(r, c) for r, c in flipped]
+        move_details = {
             'player': player,
             'move': self.numeric_to_algebraic(row, col),
-            'flipped': len(flipped)
-        })
+            'flipped': len(flipped),
+            'flipped_positions': flipped_positions
+        }
+        self.move_history.append(move_details)
+
+        # Log detailed move information
+        x_count, o_count = self.count_discs()
+        move_log = {
+            'move_number': len(self.move_history),
+            'timestamp': datetime.now().isoformat(),
+            'player': player,
+            'move_position': self.numeric_to_algebraic(row, col),
+            'flipped_discs': {
+                'count': len(flipped),
+                'positions': flipped_positions
+            },
+            'board_state': self.get_board_state(),
+            'valid_moves': [self.numeric_to_algebraic(r, c) for r, c in self.get_valid_moves(opponent)],
+            'score': {
+                'X': x_count,
+                'O': o_count
+            }
+        }
+        self.game_log['moves'].append(move_log)
         return True
 
     def has_valid_move(self, player):
@@ -108,8 +156,24 @@ class Othello:
         print(f"\nCurrent score - Black (X): {x_count}, White (O): {o_count}")
         if self.move_history:
             last_move = self.move_history[-1]
-            print(f"Last move: {last_move['player']} played {last_move['move']}, " 
-                  f"flipping {last_move['flipped']} disc(s)")
+            flipped_str = ", ".join(last_move['flipped_positions'])
+            print(f"Last move: {last_move['player']} played {last_move['move']}, "
+                  f"flipping {last_move['flipped']} disc(s) at: [{flipped_str}]")
+
+    def save_game_log(self, filename=None):
+        """Save the game log to a JSON file"""
+        if self.game_log['moves']:  # Only save if there were moves made
+            self.game_log['end_time'] = datetime.now().isoformat()
+            x_count, o_count = self.count_discs()
+            self.game_log['final_score'] = {'X': x_count, 'O': o_count}
+            self.game_log['winner'] = 'X' if x_count > o_count else 'O' if o_count > x_count else 'Tie'
+            
+            if filename is None:
+                filename = f"othello_game_{self.game_log['game_id']}.json"
+            
+            with open(filename, 'w') as f:
+                json.dump(self.game_log, f, indent=2)
+            print(f"\nGame log saved to {filename}")
 
 class OthelloAI:
     def __init__(self, player, depth, heuristic):
@@ -276,6 +340,23 @@ def main():
             heuristic2 = int(input("Choose heuristic for AI 2 (1-3): "))
             ai_player2 = OthelloAI("O", depth=depth, heuristic=heuristic2)
 
+    game_mode_str = {1: "Human vs Human", 2: "Human vs AI", 3: "AI vs AI"}[mode]
+    game.game_log['game_mode'] = game_mode_str
+    if mode in [2, 3]:
+        game.game_log['ai_settings'] = {
+            'AI1': {
+                'player': "O" if mode == 2 else "X",
+                'depth': depth,
+                'heuristic': heuristic1
+            }
+        }
+        if mode == 3:
+            game.game_log['ai_settings']['AI2'] = {
+                'player': "O",
+                'depth': depth,
+                'heuristic': heuristic2
+            }
+
     while not game.is_game_over():
         game.display_board()
         game.print_game_status()
@@ -328,6 +409,9 @@ def main():
         print("White (O) wins!")
     else:
         print("It's a tie!")
+
+    # Save the game log
+    game.save_game_log()
 
 if __name__ == "__main__":
     main()
