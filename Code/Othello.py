@@ -1,7 +1,21 @@
 import copy
 import time
 import json
+import sys
 from datetime import datetime
+
+class Tee(object):
+    def __init__(self, *files):
+        self.files = files
+
+    def write(self, obj):
+        for f in self.files:
+            f.write(obj)
+            f.flush()  # optional: ensures immediate write
+
+    def flush(self):
+        for f in self.files:
+            f.flush()
 
 class Othello:
     def __init__(self):
@@ -301,6 +315,9 @@ class OthelloAI:
         return best_move
 
 def main():
+    # Capture the original stdout
+    original_stdout = sys.stdout
+    
     print("Welcome to Othello!")
     print("Choose Game Mode:")
     print("1. Human vs Human")
@@ -316,8 +333,11 @@ def main():
         except ValueError:
             print("Invalid input. Please enter a number.")
 
-    game = Othello()
-
+    # Initialize variables for filename
+    depth = 0
+    heuristic1 = 0
+    heuristic2 = 0
+    
     if mode == 2 or mode == 3:
         while True:
             try:
@@ -340,6 +360,20 @@ def main():
             heuristic2 = int(input("Choose heuristic for AI 2 (1-3): "))
             ai_player2 = OthelloAI("O", depth=depth, heuristic=heuristic2)
 
+    # Create descriptive filename based on game settings
+    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+    if mode == 1:
+        output_filename = f"othello_HumanVsHuman_{timestamp}.txt"
+    elif mode == 2:
+        output_filename = f"othello_HumanVsAI_d{depth}_h{heuristic1}_{timestamp}.txt"
+    else:
+        output_filename = f"othello_AIvsAI_d{depth}_h{heuristic1}h{heuristic2}_{timestamp}.txt"
+
+    # Open file and set up Tee to write to both console and file
+    output_file = open(output_filename, 'w')
+    sys.stdout = Tee(sys.stdout, output_file)
+
+    game = Othello()
     game_mode_str = {1: "Human vs Human", 2: "Human vs AI", 3: "AI vs AI"}[mode]
     game.game_log['game_mode'] = game_mode_str
     if mode in [2, 3]:
@@ -412,6 +446,11 @@ def main():
 
     # Save the game log
     game.save_game_log()
+
+    # Restore original stdout and close file
+    sys.stdout = original_stdout
+    output_file.close()
+    print(f"\nGame output has been saved to {output_filename}")
 
 if __name__ == "__main__":
     main()
