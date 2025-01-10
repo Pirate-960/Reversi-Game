@@ -111,7 +111,7 @@ class OthelloVisualizer:
             
             # Set labels
             ax1.set_xticklabels(list('abcdefgh'))
-            ax1.set_yticklabels(list('87654321'))
+            ax1.set_yticklabels(list('12345678'))
             
             # Draw grid
             ax1.grid(True)

@@ -174,7 +174,7 @@ class OthelloVisualizer:
             ax1.set_xticks(x_ticks)
             ax1.set_yticks(y_ticks)
             ax1.set_xticklabels(list('abcdefgh'))
-            ax1.set_yticklabels(list('87654321'))
+            ax1.set_yticklabels(list('12345678'))
             
             # Style the coordinate labels
             ax1.tick_params(colors=self.text_color, labelsize=12)
