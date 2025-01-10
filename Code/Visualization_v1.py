@@ -111,7 +111,7 @@ class OthelloVisualizer:
             
             # Set labels
             ax1.set_xticklabels(list('abcdefgh'))
-            ax1.set_yticklabels(list('12345678'))
+            ax1.set_yticklabels(list('87654321'))
             
             # Draw grid
             ax1.grid(True)
@@ -167,7 +167,7 @@ class OthelloVisualizer:
         
         plt.figure(figsize=(10, 8))
         sns.heatmap(move_freq, annot=True, fmt='.0f', cmap='YlOrRd',
-                   xticklabels=list('abcdefgh'), yticklabels=list('87654321'))
+                   xticklabels=list('abcdefgh'), yticklabels=list('12345678'))
         plt.title('Move Frequency Heatmap')
         plt.show()
     
@@ -239,7 +239,7 @@ if __name__ == "__main__":
     try:
         # Read the game log from file
         print("Reading game log file...")
-        with open('othello_AIvsAI_d5_h3h3_20250109_215427.txt', 'r') as f:
+        with open('othello_AIvsAI_d4_h3h3_20250110_165034.txt', 'r') as f:
             game_log = f.read()
         
         print("Game log length:", len(game_log))

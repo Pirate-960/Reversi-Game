@@ -52,7 +52,7 @@ class Othello:
         """Convert algebraic notation (e.g., 'e3') to numeric coordinates (row, col)"""
         try:
             col = ord(move[0].lower()) - ord('a')
-            row = 8 - int(move[1])
+            row = int(move[1]) - 1
             if 0 <= row < 8 and 0 <= col < 8:
                 return row, col
             return None
@@ -61,12 +61,12 @@ class Othello:
 
     def numeric_to_algebraic(self, row, col):
         """Convert numeric coordinates to algebraic notation"""
-        return f"{chr(col + ord('a'))}{8 - row}"
+        return f"{chr(col + ord('a'))}{row + 1}"
 
     def display_board(self):
         print()
-        for i in range(8):
-            print(f"{8-i} {' '.join(self.board[i])}")
+        for i, row in enumerate(self.board):
+            print(f"{i + 1} {' '.join(row)}")
         print("  a b c d e f g h")
 
     def is_valid_move(self, row, col, player):
