@@ -2,7 +2,13 @@ import copy
 import time
 import json
 import sys
+import cv2
+import numpy as np
+import pygetwindow as gw
+import pyautogui
+import threading
 from datetime import datetime
+
 
 class Tee(object):
     def __init__(self, *files):
@@ -314,16 +320,48 @@ class OthelloAI:
         
         return best_move
 
+def record_terminal_in_background(output_filename="gameplay_output.avi", fps=10):
+    """
+    Starts video recording of the terminal in a separate thread.
+    Parameters:
+        output_filename (str): Name of the output video file.
+        fps (int): Frames per second for video recording.
+    """
+    def record():
+        window = gw.getWindowsWithTitle(gw.getActiveWindow().title)[0]
+        left, top, width, height = window.left, window.top, window.width, window.height
+        
+        fourcc = cv2.VideoWriter_fourcc(*'XVID')
+        out = cv2.VideoWriter(output_filename, fourcc, fps, (width, height))
+
+        print(f"Recording started. Video will be saved as {output_filename}.")
+        try:
+            while True:
+                img = pyautogui.screenshot(region=(left, top, width, height))
+                frame = np.array(img)
+                frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+                out.write(frame)
+        except KeyboardInterrupt:
+            print("Recording stopped by user.")
+        finally:
+            out.release()
+            cv2.destroyAllWindows()
+            print(f"Recording saved as {output_filename}.")
+
+    # Start the recording thread
+    thread = threading.Thread(target=record, daemon=True)
+    thread.start()
+
 def main():
     # Capture the original stdout
     original_stdout = sys.stdout
-    
+
     print("Welcome to Othello!")
     print("Choose Game Mode:")
     print("1. Human vs Human")
     print("2. Human vs AI")
     print("3. AI vs AI")
-    
+
     while True:
         try:
             mode = int(input("Enter your choice (1-3): "))
@@ -368,6 +406,9 @@ def main():
         output_filename = f"othello_HumanVsAI_d{depth}_h{heuristic1}_{timestamp}.txt"
     else:
         output_filename = f"othello_AIvsAI_d{depth}_h{heuristic1}h{heuristic2}_{timestamp}.txt"
+
+    # Start recording in the background
+    record_terminal_in_background(output_filename=f"othello_gameplay_{timestamp}.avi")
 
     # Open file and set up Tee to write to both console and file
     output_file = open(output_filename, 'w')
@@ -451,6 +492,7 @@ def main():
     sys.stdout = original_stdout
     output_file.close()
     print(f"\nGame output has been saved to {output_filename}")
+
 
 if __name__ == "__main__":
     main()
