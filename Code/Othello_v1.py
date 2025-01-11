@@ -577,16 +577,47 @@ def main():
             print("Invalid input. Please enter a number.")
 
     # Initialize variables for filename - AI settings if needed
-    depth = 0
+    depth1 = 0
+    depth2 = 0
     heuristic1 = 0
     heuristic2 = 0
     
-    if mode == 2 or mode == 3:
-        # Get AI search depth
+    if mode == 2:
+        # Get AI search depth for single AI player
         while True:
             try:
-                depth = int(input("Enter AI search depth (1-8 recommended): "))
-                if 1 <= depth <= 10:
+                depth1 = int(input("Enter AI search depth (1-8 recommended): "))
+                if 1 <= depth1 <= 10:
+                    break
+                print("Please enter a reasonable depth (1-8).")
+            except ValueError:
+                print("Invalid input. Please enter a number.")
+
+        # Select AI heuristic
+        print("\nAvailable heuristics:")
+        print("1. Basic disc count")
+        print("2. Positional strategy (weighted positions)")
+        print("3. Combined mobility and stability")
+        
+        heuristic1 = int(input("Choose heuristic for AI (1-3): "))
+        ai_player1 = OthelloAI("O", depth=depth1, heuristic=heuristic1)
+
+    elif mode == 3:
+        # Get AI search depth for first AI player
+        while True:
+            try:
+                depth1 = int(input("Enter search depth for AI 1 (Black/X) (1-8 recommended): "))
+                if 1 <= depth1 <= 10:
+                    break
+                print("Please enter a reasonable depth (1-8).")
+            except ValueError:
+                print("Invalid input. Please enter a number.")
+
+        # Get AI search depth for second AI player
+        while True:
+            try:
+                depth2 = int(input("Enter search depth for AI 2 (White/O) (1-8 recommended): "))
+                if 1 <= depth2 <= 10:
                     break
                 print("Please enter a reasonable depth (1-8).")
             except ValueError:
@@ -598,25 +629,24 @@ def main():
         print("2. Positional strategy (weighted positions)")
         print("3. Combined mobility and stability")
         
-        heuristic1 = int(input("Choose heuristic for AI 1 (1-3): "))
-        ai_player1 = OthelloAI("O" if mode == 2 else "X", depth=depth, heuristic=heuristic1)
-
-        if mode == 3:
-            heuristic2 = int(input("Choose heuristic for AI 2 (1-3): "))
-            ai_player2 = OthelloAI("O", depth=depth, heuristic=heuristic2)
+        heuristic1 = int(input("Choose heuristic for AI 1 (Black/X) (1-3): "))
+        heuristic2 = int(input("Choose heuristic for AI 2 (White/O) (1-3): "))
+        
+        ai_player1 = OthelloAI("X", depth=depth1, heuristic=heuristic1)
+        ai_player2 = OthelloAI("O", depth=depth2, heuristic=heuristic2)
 
     # Create descriptive filename based on game settings
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
     if mode == 1:
         output_filename = f"othello_HumanVsHuman_{timestamp}.txt"
     elif mode == 2:
-        output_filename = f"othello_HumanVsAI_d{depth}_h{heuristic1}_{timestamp}.txt"
+        output_filename = f"othello_HumanVsAI_d{depth1}_h{heuristic1}_{timestamp}.txt"
     else:
-        output_filename = f"othello_AIvsAI_d{depth}_h{heuristic1}h{heuristic2}_{timestamp}.txt"
+        output_filename = f"othello_AIvsAI_d{depth1}d{depth2}_h{heuristic1}h{heuristic2}_{timestamp}.txt"
 
     # Start video recording
     record_terminal_in_background(output_filename=f"othello_gameplay_{timestamp}.avi")
-
+    
     # Set up output logging
     # Open file and set up Tee to write to both console and file
     output_file = open(output_filename, 'w')
@@ -626,20 +656,29 @@ def main():
     game = Othello()
     game_mode_str = {1: "Human vs Human", 2: "Human vs AI", 3: "AI vs AI"}[mode]
     game.game_log['game_mode'] = game_mode_str
-    if mode in [2, 3]:
+    
+    # Record AI settings in game log
+    if mode == 2:
         game.game_log['ai_settings'] = {
             'AI1': {
-                'player': "O" if mode == 2 else "X",
-                'depth': depth,
+                'player': "O",
+                'depth': depth1,
                 'heuristic': heuristic1
             }
         }
-        if mode == 3:
-            game.game_log['ai_settings']['AI2'] = {
+    elif mode == 3:
+        game.game_log['ai_settings'] = {
+            'AI1': {
+                'player': "X",
+                'depth': depth1,
+                'heuristic': heuristic1
+            },
+            'AI2': {
                 'player': "O",
-                'depth': depth,
+                'depth': depth2,
                 'heuristic': heuristic2
             }
+        }
 
     # Main game loop
     while not game.is_game_over():
