@@ -322,7 +322,7 @@ if __name__ == "__main__":
     try:
         # Read the game log from file
         print("Reading game log file...")
-        with open('othello_AIvsAI_d6_h3h3_20250110_171555.txt', 'r') as f:
+        with open('othello_HumanVsAI_d7_h3_20250112_211812.txt', 'r') as f:
             game_log = f.read()
         
         print("Game log length:", len(game_log))

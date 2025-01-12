@@ -390,7 +390,10 @@ class OthelloAI:
         print(f"\nAI Statistics:")
         print(f"Nodes evaluated: {self.nodes_evaluated}")
         print(f"Time taken: {elapsed_time:.2f} seconds")
-        print(f"Nodes per second: {self.nodes_evaluated / elapsed_time:.0f}")
+        if elapsed_time > 0:
+            print(f"Nodes per second: {self.nodes_evaluated / elapsed_time:.0f}")
+        else:
+            print("Nodes per second: N/A")
         
         return best_move
 
