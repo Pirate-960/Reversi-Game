@@ -393,43 +393,63 @@ class OthelloAI:
         
         return best_move
 
-def record_terminal_in_background(output_filename="gameplay_output.avi", fps=10):
-    """
-    Record terminal window activity to video file in background thread.
+# def record_terminal_in_background(output_filename="gameplay_output.avi", fps=10):
+#     """
+#     Record terminal window activity to video file in background thread.
     
-    Args:
-        output_filename (str): Output video file name
-        fps (int): Frames per second for recording
-    """
-    def record():
-        """Inner function to handle recording process."""
-        # Get active window dimensions
-        window = gw.getWindowsWithTitle(gw.getActiveWindow().title)[0]
-        left, top, width, height = window.left, window.top, window.width, window.height
+#     Args:
+#         output_filename (str): Output video file name
+#         fps (int): Frames per second for recording
+#     """
+#     def record():
+#         """Inner function to handle recording process."""
+#         # Get active window dimensions
+#         window = gw.getWindowsWithTitle(gw.getActiveWindow().title)[0]
+#         left, top, width, height = window.left, window.top, window.width, window.height
         
-        # Set up video writer
-        fourcc = cv2.VideoWriter_fourcc(*'XVID')
-        out = cv2.VideoWriter(output_filename, fourcc, fps, (width, height))
+#         # Set up video writer
+#         fourcc = cv2.VideoWriter_fourcc(*'XVID')
+#         out = cv2.VideoWriter(output_filename, fourcc, fps, (width, height))
 
-        print(f"Recording started. Video will be saved as {output_filename}.")
-        try:
-            while True:
-                # Capture and process each frame
-                img = pyautogui.screenshot(region=(left, top, width, height))
-                frame = np.array(img)
-                frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-                out.write(frame)
-        except KeyboardInterrupt:
-            print("Recording stopped by user.")
-        finally:
-            out.release()
-            cv2.destroyAllWindows()
-            print(f"Recording saved as {output_filename}.")
+#         print(f"Recording started. Video will be saved as {output_filename}.")
+#         try:
+#             while True:
+#                 # Capture and process each frame
+#                 img = pyautogui.screenshot(region=(left, top, width, height))
+#                 frame = np.array(img)
+#                 frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+#                 out.write(frame)
+#         except KeyboardInterrupt:
+#             print("Recording stopped by user.")
+#         finally:
+#             out.release()
+#             cv2.destroyAllWindows()
+#             print(f"Recording saved as {output_filename}.")
 
-    # Start recording in separate thread
-    thread = threading.Thread(target=record, daemon=True)
-    thread.start()
+#     # Start recording in separate thread
+#     thread = threading.Thread(target=record, daemon=True)
+#     thread.start()
 
+# def start_ffmpeg_recording(output_filename):
+#     """Starts FFmpeg process to record the VSCode window."""
+#     return subprocess.Popen([
+#         "ffmpeg", "-y", "-f", "gdigrab", "-i", "title=Othello_v1.py - Reversi Game - Visual Studio Code",
+#         "-framerate", "10", "-c:v", "libx264", "-preset", "ultrafast", output_filename
+#     ], stdin=subprocess.PIPE, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+def start_ffmpeg_recording(output_filename):
+    """Start FFmpeg to record the entire screen with cropping."""
+    return subprocess.Popen([
+        "ffmpeg", "-y", "-f", "gdigrab", "-framerate", "10", "-i", "desktop",
+        "-filter_complex", "crop=1920:300:0:780", "-c:v", "libx264", "-preset", "ultrafast", output_filename
+    ], stdin=subprocess.PIPE, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+def stop_ffmpeg_recording(ffmpeg_process):
+    """Stops the FFmpeg recording process."""
+    ffmpeg_process.stdin.write(b"q\n")
+    ffmpeg_process.stdin.flush()
+    ffmpeg_process.terminate()
+    ffmpeg_process.wait()
 
 def main():
     """
@@ -438,194 +458,207 @@ def main():
     """
     # Save original stdout for restoration later
     original_stdout = sys.stdout
-
-    print("Welcome to Othello!")
-    print("Choose Game Mode:")
-    print("1. Human vs Human")
-    print("2. Human vs AI")
-    print("3. AI vs AI")
-
-    # Get valid game mode selection
-    while True:
-        try:
-            mode = int(input("Enter your choice (1-3): "))
-            if mode in [1, 2, 3]:
-                break
-            print("Invalid choice. Please enter 1, 2, or 3.")
-        except ValueError:
-            print("Invalid input. Please enter a number.")
-
-    # Initialize variables for filename - AI settings if needed
-    depth1 = 0
-    depth2 = 0
-    heuristic1 = 0
-    heuristic2 = 0
-    
-    if mode == 2:
-        # Get AI search depth for single AI player
-        while True:
-            try:
-                depth1 = int(input("Enter AI search depth (1-8 recommended): "))
-                if 1 <= depth1 <= 10:
-                    break
-                print("Please enter a reasonable depth (1-8).")
-            except ValueError:
-                print("Invalid input. Please enter a number.")
-
-        # Select AI heuristic
-        print("\nAvailable heuristics:")
-        print("1. Basic disc count")
-        print("2. Positional strategy (weighted positions)")
-        print("3. Combined mobility and stability")
-        
-        heuristic1 = int(input("Choose heuristic for AI (1-3): "))
-        ai_player1 = OthelloAI("O", depth=depth1, heuristic=heuristic1)
-
-    elif mode == 3:
-        # Get AI search depth for first AI player
-        while True:
-            try:
-                depth1 = int(input("Enter search depth for AI 1 (Black/X) (1-8 recommended): "))
-                if 1 <= depth1 <= 10:
-                    break
-                print("Please enter a reasonable depth (1-8).")
-            except ValueError:
-                print("Invalid input. Please enter a number.")
-
-        # Get AI search depth for second AI player
-        while True:
-            try:
-                depth2 = int(input("Enter search depth for AI 2 (White/O) (1-8 recommended): "))
-                if 1 <= depth2 <= 10:
-                    break
-                print("Please enter a reasonable depth (1-8).")
-            except ValueError:
-                print("Invalid input. Please enter a number.")
-
-        # Select AI heuristics
-        print("\nAvailable heuristics:")
-        print("1. Basic disc count")
-        print("2. Positional strategy (weighted positions)")
-        print("3. Combined mobility and stability")
-        
-        heuristic1 = int(input("Choose heuristic for AI 1 (Black/X) (1-3): "))
-        heuristic2 = int(input("Choose heuristic for AI 2 (White/O) (1-3): "))
-        
-        ai_player1 = OthelloAI("X", depth=depth1, heuristic=heuristic1)
-        ai_player2 = OthelloAI("O", depth=depth2, heuristic=heuristic2)
-
-    # Create descriptive filename based on game settings
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-    if mode == 1:
-        output_filename = f"othello_HumanVsHuman_{timestamp}.txt"
-    elif mode == 2:
-        output_filename = f"othello_HumanVsAI_d{depth1}_h{heuristic1}_{timestamp}.txt"
-    else:
-        output_filename = f"othello_AIvsAI_d{depth1}d{depth2}_h{heuristic1}h{heuristic2}_{timestamp}.txt"
-
-    # Start video recording
-    record_terminal_in_background(output_filename=f"othello_gameplay_{timestamp}.avi")
+    video_filename = f"othello_gameplay_{timestamp}.mp4"
     
-    # Set up output logging
-    # Open file and set up Tee to write to both console and file
-    output_file = open(output_filename, 'w')
-    sys.stdout = Tee(sys.stdout, output_file)
+    # Start FFmpeg recording
+    ffmpeg_process = start_ffmpeg_recording(video_filename)
+    print(f"Recording started...!")
 
-    # Initialize game and game log
-    game = Othello()
-    game_mode_str = {1: "Human vs Human", 2: "Human vs AI", 3: "AI vs AI"}[mode]
-    game.game_log['game_mode'] = game_mode_str
-    
-    # Record AI settings in game log
-    if mode == 2:
-        game.game_log['ai_settings'] = {
-            'AI1': {
-                'player': "O",
-                'depth': depth1,
-                'heuristic': heuristic1
-            }
-        }
-    elif mode == 3:
-        game.game_log['ai_settings'] = {
-            'AI1': {
-                'player': "X",
-                'depth': depth1,
-                'heuristic': heuristic1
-            },
-            'AI2': {
-                'player': "O",
-                'depth': depth2,
-                'heuristic': heuristic2
-            }
-        }
+    try:
+        # Display game mode selection
+        print("Welcome to Othello!")
+        print("Choose Game Mode:")
+        print("1. Human vs Human")
+        print("2. Human vs AI")
+        print("3. AI vs AI")
 
-    # Main game loop
-    while not game.is_game_over():
-        game.display_board()
-        game.print_game_status()
-        
-        # Handle player with no valid moves
-        if not game.has_valid_move(game.current_player):
-            print(f"\n{game.current_player} has no valid moves. Passing...")
-            game.switch_player()
-            continue
-
-        # Handle moves based on game mode
-        if mode == 1 or (mode == 2 and game.current_player == "X"):
-            # Human player move
-            print(f"\n{game.current_player}'s turn:")
-            moves = game.get_valid_moves(game.current_player)
-            print("Available moves:", 
-                  [game.numeric_to_algebraic(r, c) for r, c in moves])
-            
-            # Get valid move from human player
-            while True:
-                move = input("Enter your move (e.g., 'e3'): ").strip().lower()
-                coords = game.algebraic_to_numeric(move)
-                if coords and coords in moves:
-                    game.apply_move(coords[0], coords[1], game.current_player)
+        # Get valid game mode selection
+        while True:
+            try:
+                mode = int(input("Enter your choice (1-3): "))
+                if mode in [1, 2, 3]:
                     break
-                print("Invalid move. Please try again.")
-                
-        elif mode == 2 and game.current_player == "O":
-            # AI player move in Human vs AI mode
-            print("\nAI's turn (O):")
-            move = ai_player1.find_best_move(game)
-            if move:
-                game.apply_move(move[0], move[1], "O")
-                print(f"AI plays: {game.numeric_to_algebraic(move[0], move[1])}")
-                
-        elif mode == 3:
-            # AI vs AI mode
-            print(f"\nAI {game.current_player}'s turn:")
-            ai_player = ai_player1 if game.current_player == "X" else ai_player2
-            move = ai_player.find_best_move(game)
-            if move:
-                game.apply_move(move[0], move[1], game.current_player)
-                print(f"AI plays: {game.numeric_to_algebraic(move[0], move[1])}")
+                print("Invalid choice. Please enter 1, 2, or 3.")
+            except ValueError:
+                print("Invalid input. Please enter a number.")
+
+        # Initialize variables for filename - AI settings if needed
+        depth1 = 0
+        depth2 = 0
+        heuristic1 = 0
+        heuristic2 = 0
         
-        game.switch_player()
+        if mode == 2:
+            # Get AI search depth for single AI player
+            while True:
+                try:
+                    depth1 = int(input("Enter AI search depth (1-8 recommended): "))
+                    if 1 <= depth1 <= 10:
+                        break
+                    print("Please enter a reasonable depth (1-8).")
+                except ValueError:
+                    print("Invalid input. Please enter a number.")
 
-    # Game over - display final results
-    game.display_board()
-    x_count, o_count = game.count_discs()
-    print("\nGame Over!")
-    print(f"Final score - Black (X): {x_count}, White (O): {o_count}")
-    
-    if x_count > o_count:
-        print("Black (X) wins!")
-    elif o_count > x_count:
-        print("White (O) wins!")
-    else:
-        print("It's a tie!")
+            # Select AI heuristic
+            print("\nAvailable heuristics:")
+            print("1. Basic disc count")
+            print("2. Positional strategy (weighted positions)")
+            print("3. Combined mobility and stability")
+            
+            heuristic1 = int(input("Choose heuristic for AI (1-3): "))
+            ai_player1 = OthelloAI("O", depth=depth1, heuristic=heuristic1)
 
-    # Save game log and clean up
-    game.save_game_log()
+        elif mode == 3:
+            # Get AI search depth for first AI player
+            while True:
+                try:
+                    depth1 = int(input("Enter search depth for AI 1 (Black/X) (1-8 recommended): "))
+                    if 1 <= depth1 <= 10:
+                        break
+                    print("Please enter a reasonable depth (1-8).")
+                except ValueError:
+                    print("Invalid input. Please enter a number.")
 
-    # Restore original stdout and close file
-    sys.stdout = original_stdout
-    output_file.close()
-    print(f"\nGame output has been saved to {output_filename}")
+            # Get AI search depth for second AI player
+            while True:
+                try:
+                    depth2 = int(input("Enter search depth for AI 2 (White/O) (1-8 recommended): "))
+                    if 1 <= depth2 <= 10:
+                        break
+                    print("Please enter a reasonable depth (1-8).")
+                except ValueError:
+                    print("Invalid input. Please enter a number.")
+
+            # Select AI heuristics
+            print("\nAvailable heuristics:")
+            print("1. Basic disc count")
+            print("2. Positional strategy (weighted positions)")
+            print("3. Combined mobility and stability")
+            
+            heuristic1 = int(input("Choose heuristic for AI 1 (Black/X) (1-3): "))
+            heuristic2 = int(input("Choose heuristic for AI 2 (White/O) (1-3): "))
+            
+            ai_player1 = OthelloAI("X", depth=depth1, heuristic=heuristic1)
+            ai_player2 = OthelloAI("O", depth=depth2, heuristic=heuristic2)
+
+        # Create descriptive filename based on game settings
+        timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+        if mode == 1:
+            output_filename = f"othello_HumanVsHuman_{timestamp}.txt"
+        elif mode == 2:
+            output_filename = f"othello_HumanVsAI_d{depth1}_h{heuristic1}_{timestamp}.txt"
+        else:
+            output_filename = f"othello_AIvsAI_d{depth1}d{depth2}_h{heuristic1}h{heuristic2}_{timestamp}.txt"
+
+        # Start video recording
+        # record_terminal_in_background(output_filename=f"othello_gameplay_{timestamp}.avi")
+        
+        # Set up output logging
+        # Open file and set up Tee to write to both console and file
+        output_file = open(output_filename, 'w')
+        sys.stdout = Tee(sys.stdout, output_file)
+
+        # Initialize game and game log
+        game = Othello()
+        game_mode_str = {1: "Human vs Human", 2: "Human vs AI", 3: "AI vs AI"}[mode]
+        game.game_log['game_mode'] = game_mode_str
+        
+        # Record AI settings in game log
+        if mode == 2:
+            game.game_log['ai_settings'] = {
+                'AI1': {
+                    'player': "O",
+                    'depth': depth1,
+                    'heuristic': heuristic1
+                }
+            }
+        elif mode == 3:
+            game.game_log['ai_settings'] = {
+                'AI1': {
+                    'player': "X",
+                    'depth': depth1,
+                    'heuristic': heuristic1
+                },
+                'AI2': {
+                    'player': "O",
+                    'depth': depth2,
+                    'heuristic': heuristic2
+                }
+            }
+
+        # Main game loop
+        while not game.is_game_over():
+            game.display_board()
+            game.print_game_status()
+            
+            # Handle player with no valid moves
+            if not game.has_valid_move(game.current_player):
+                print(f"\n{game.current_player} has no valid moves. Passing...")
+                game.switch_player()
+                continue
+
+            # Handle moves based on game mode
+            if mode == 1 or (mode == 2 and game.current_player == "X"):
+                # Human player move
+                print(f"\n{game.current_player}'s turn:")
+                moves = game.get_valid_moves(game.current_player)
+                print("Available moves:", 
+                    [game.numeric_to_algebraic(r, c) for r, c in moves])
+                
+                # Get valid move from human player
+                while True:
+                    move = input("Enter your move (e.g., 'e3'): ").strip().lower()
+                    coords = game.algebraic_to_numeric(move)
+                    if coords and coords in moves:
+                        game.apply_move(coords[0], coords[1], game.current_player)
+                        break
+                    print("Invalid move. Please try again.")
+                    
+            elif mode == 2 and game.current_player == "O":
+                # AI player move in Human vs AI mode
+                print("\nAI's turn (O):")
+                move = ai_player1.find_best_move(game)
+                if move:
+                    game.apply_move(move[0], move[1], "O")
+                    print(f"AI plays: {game.numeric_to_algebraic(move[0], move[1])}")
+                    
+            elif mode == 3:
+                # AI vs AI mode
+                print(f"\nAI {game.current_player}'s turn:")
+                ai_player = ai_player1 if game.current_player == "X" else ai_player2
+                move = ai_player.find_best_move(game)
+                if move:
+                    game.apply_move(move[0], move[1], game.current_player)
+                    print(f"AI plays: {game.numeric_to_algebraic(move[0], move[1])}")
+            
+            game.switch_player()
+
+        # Game over - display final results
+        game.display_board()
+        x_count, o_count = game.count_discs()
+        print("\nGame Over!")
+        print(f"Final score - Black (X): {x_count}, White (O): {o_count}")
+        
+        if x_count > o_count:
+            print("Black (X) wins!")
+        elif o_count > x_count:
+            print("White (O) wins!")
+        else:
+            print("It's a tie!")
+
+        # Save game log and clean up
+        game.save_game_log()
+
+    finally:
+        # Stop video recording and restore stdout
+        stop_ffmpeg_recording(ffmpeg_process)
+        # Restore original stdout and close file
+        sys.stdout = original_stdout
+        output_file.close()
+        print(f"\nGame output has been saved to {output_filename}")
+        print(f"\nGame recording have been saved as {video_filename}")
+
 
 if __name__ == "__main__":
     main()
