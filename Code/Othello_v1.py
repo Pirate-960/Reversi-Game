@@ -560,7 +560,7 @@ def start_ffmpeg_recording(output_filename):
     """Start FFmpeg to record the entire screen with cropping."""
     return subprocess.Popen([
         "ffmpeg", "-y", "-f", "gdigrab", "-framerate", "10", "-i", "desktop",
-        "-filter_complex", "crop=1920:300:0:780", "-c:v", "libx264", "-preset", "ultrafast", output_filename
+        "-filter_complex", "crop=1920:1032:0:0", "-c:v", "libx264", "-preset", "ultrafast", output_filename
     ], stdin=subprocess.PIPE, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
 def stop_ffmpeg_recording(ffmpeg_process):
@@ -770,6 +770,8 @@ def main():
         game.save_game_log()
 
     finally:
+        # Add delay to ensure FFmpeg process is stopped -- To View last frame of the game in a clean way
+        time.sleep(5)
         # Stop video recording and restore stdout
         stop_ffmpeg_recording(ffmpeg_process)
         # Restore original stdout and close file
