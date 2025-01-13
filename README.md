@@ -2,7 +2,6 @@
 Reversi is a strategy board game for two players, played on an 8×8 uncheckered board. It was invented in 1883. Othello, a variant with a fixed initial setup of the board, was patented in 1971.
 
 
-```
 # Othello Game and AI Performance Testing
 
 This repository contains the implementation of the classic Othello (Reversi) game, along with AI players using heuristic evaluation and a performance testing framework.
