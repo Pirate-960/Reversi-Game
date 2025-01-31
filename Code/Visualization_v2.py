@@ -1,5 +1,7 @@
 import pandas as pd
 import numpy as np
+import os
+import glob
 import matplotlib.pyplot as plt
 import seaborn as sns
 from matplotlib.animation import FuncAnimation
@@ -320,19 +322,34 @@ def visualize_game(game_log):
 # If running directly
 if __name__ == "__main__":
     try:
-        # Read the game log from file
-        print("Reading game log file...")
-        with open('othello_HumanVsAI_d7_h3_20250112_211812.txt', 'r') as f:
-            game_log = f.read()
+        # Find all .txt files in the current directory
+        txt_files = glob.glob("*.txt")
         
-        print("Game log length:", len(game_log))
-        print("First few lines of game log:")
-        print('\n'.join(game_log.split('\n')[:10]))
+        # Filter out 'requirements.txt' if it exists
+        txt_files = [file for file in txt_files if os.path.basename(file) != "requirements.txt"]
+        print(f"Found {len(txt_files)} .txt files in the current directory.")
         
-        visualize_game(game_log)
-    except FileNotFoundError:
-        print("Error: Game log file not found. Please check the file path.")
+        # Check if there are any .txt files left after filtering
+        if not txt_files:
+            print("Error: No valid .txt files found in the current directory (excluding 'requirements.txt').")
+        else:
+            # Use the first .txt file found (after filtering)
+            file_name = txt_files[0]
+            print(f"Reading game log file: {file_name}...")
+            
+            # Open and read the file
+            with open(file_name, 'r') as f:
+                game_log = f.read()
+            
+            # Print some information about the game log
+            print("Game log length:", len(game_log))
+            print("First few lines of game log:")
+            print('\n'.join(game_log.split('\n')[:10]))
+            
+            # Visualize the game log
+            visualize_game(game_log)
     except Exception as e:
+        # Handle any unexpected errors and print the traceback
         print(f"Error: {e}")
         import traceback
         traceback.print_exc()
