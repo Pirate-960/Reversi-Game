@@ -1,6 +1,6 @@
 import time
 from datetime import datetime
-from Othello_v2 import Othello, OthelloAI
+from Game.Othello_v3 import Othello, OthelloAI
 
 def test_ai_performance():
     """

@@ -464,10 +464,10 @@ def main():
     # Save original stdout for restoration later
     original_stdout = sys.stdout
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-    video_filename = f"othello_gameplay_{timestamp}.mp4"
+    # video_filename = f"othello_gameplay_{timestamp}.mp4"
     
     # Start FFmpeg recording
-    ffmpeg_process = start_ffmpeg_recording(video_filename)
+    # ffmpeg_process = start_ffmpeg_recording(video_filename)
     print(f"Recording started...!")
 
     try:
@@ -657,14 +657,14 @@ def main():
 
     finally:
         # Add delay to ensure FFmpeg process is stopped -- To View last frame of the game in a clean way
-        time.sleep(5)
+        # time.sleep(5)
         # Stop video recording and restore stdout
-        stop_ffmpeg_recording(ffmpeg_process)
+        # stop_ffmpeg_recording(ffmpeg_process)
         # Restore original stdout and close file
         sys.stdout = original_stdout
         output_file.close()
         print(f"\nGame output has been saved to {output_filename}")
-        print(f"\nGame recording have been saved as {video_filename}")
+        # print(f"\nGame recording have been saved as {video_filename}")
 
 
 if __name__ == "__main__":
