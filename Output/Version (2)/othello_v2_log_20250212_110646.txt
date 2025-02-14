@@ -1,0 +1,111 @@
+============================================
+Othello Automation Log
+Start Time: 2025-02-12 11:06:46
+System Info: PowerShell 7.4.6
+Python Version: Python 3.12.6
+============================================
+
+[2025-02-12 11:06:46] [INFO] Starting test Depth-1-H1-H2
+[2025-02-12 11:06:46] [STATE] State saved: Depth=1, Heuristics=1 2
+[2025-02-12 11:06:47] [INFO] Completed Depth-1-H1-H2 | Duration: 00:00:00:00
+[2025-02-12 11:06:47] [INFO] --------------------------------------------------
+[2025-02-12 11:06:47] [INFO] Starting test Depth-1-H2-H3
+[2025-02-12 11:06:47] [STATE] State saved: Depth=1, Heuristics=2 3
+[2025-02-12 11:06:48] [INFO] Completed Depth-1-H2-H3 | Duration: 00:00:00:01
+[2025-02-12 11:06:48] [INFO] --------------------------------------------------
+[2025-02-12 11:06:48] [INFO] Starting test Depth-1-H3-H1
+[2025-02-12 11:06:48] [STATE] State saved: Depth=1, Heuristics=3 1
+[2025-02-12 11:06:49] [INFO] Completed Depth-1-H3-H1 | Duration: 00:00:00:01
+[2025-02-12 11:06:49] [INFO] --------------------------------------------------
+[2025-02-12 11:06:49] [INFO] Starting test Depth-2-H1-H2
+[2025-02-12 11:06:49] [STATE] State saved: Depth=2, Heuristics=1 2
+[2025-02-12 11:06:56] [INFO] Completed Depth-2-H1-H2 | Duration: 00:00:00:06
+[2025-02-12 11:06:56] [INFO] --------------------------------------------------
+[2025-02-12 11:06:56] [INFO] Starting test Depth-2-H2-H3
+[2025-02-12 11:06:56] [STATE] State saved: Depth=2, Heuristics=2 3
+[2025-02-12 11:07:01] [INFO] Completed Depth-2-H2-H3 | Duration: 00:00:00:05
+[2025-02-12 11:07:01] [INFO] --------------------------------------------------
+[2025-02-12 11:07:01] [INFO] Starting test Depth-2-H3-H1
+[2025-02-12 11:07:01] [STATE] State saved: Depth=2, Heuristics=3 1
+[2025-02-12 11:07:06] [INFO] Completed Depth-2-H3-H1 | Duration: 00:00:00:04
+[2025-02-12 11:07:06] [INFO] --------------------------------------------------
+[2025-02-12 11:07:06] [INFO] Starting test Depth-3-H1-H2
+[2025-02-12 11:07:06] [STATE] State saved: Depth=3, Heuristics=1 2
+[2025-02-12 11:07:40] [INFO] Completed Depth-3-H1-H2 | Duration: 00:00:00:34
+[2025-02-12 11:07:40] [INFO] --------------------------------------------------
+[2025-02-12 11:07:40] [INFO] Starting test Depth-3-H2-H3
+[2025-02-12 11:07:40] [STATE] State saved: Depth=3, Heuristics=2 3
+[2025-02-12 11:08:10] [INFO] Completed Depth-3-H2-H3 | Duration: 00:00:00:30
+[2025-02-12 11:08:10] [INFO] --------------------------------------------------
+[2025-02-12 11:08:10] [INFO] Starting test Depth-3-H3-H1
+[2025-02-12 11:08:10] [STATE] State saved: Depth=3, Heuristics=3 1
+[2025-02-12 11:08:33] [INFO] Completed Depth-3-H3-H1 | Duration: 00:00:00:22
+[2025-02-12 11:08:33] [INFO] --------------------------------------------------
+[2025-02-12 11:08:33] [INFO] Starting test Depth-4-H1-H2
+[2025-02-12 11:08:33] [STATE] State saved: Depth=4, Heuristics=1 2
+[2025-02-12 11:10:08] [INFO] Completed Depth-4-H1-H2 | Duration: 00:00:01:35
+[2025-02-12 11:10:08] [INFO] --------------------------------------------------
+[2025-02-12 11:10:08] [INFO] Starting test Depth-4-H2-H3
+[2025-02-12 11:10:08] [STATE] State saved: Depth=4, Heuristics=2 3
+[2025-02-12 11:12:22] [INFO] Completed Depth-4-H2-H3 | Duration: 00:00:02:14
+[2025-02-12 11:12:22] [INFO] --------------------------------------------------
+[2025-02-12 11:12:22] [INFO] Starting test Depth-4-H3-H1
+[2025-02-12 11:12:22] [STATE] State saved: Depth=4, Heuristics=3 1
+[2025-02-12 11:14:02] [INFO] Completed Depth-4-H3-H1 | Duration: 00:00:01:40
+[2025-02-12 11:14:02] [INFO] --------------------------------------------------
+[2025-02-12 11:14:02] [INFO] Starting test Depth-5-H1-H2
+[2025-02-12 11:14:02] [STATE] State saved: Depth=5, Heuristics=1 2
+[2025-02-12 11:19:53] [INFO] Completed Depth-5-H1-H2 | Duration: 00:00:05:50
+[2025-02-12 11:19:53] [INFO] --------------------------------------------------
+[2025-02-12 11:19:53] [INFO] Starting test Depth-5-H2-H3
+[2025-02-12 11:19:53] [STATE] State saved: Depth=5, Heuristics=2 3
+[2025-02-12 11:25:10] [INFO] Completed Depth-5-H2-H3 | Duration: 00:00:05:16
+[2025-02-12 11:25:10] [INFO] --------------------------------------------------
+[2025-02-12 11:25:10] [INFO] Starting test Depth-5-H3-H1
+[2025-02-12 11:25:10] [STATE] State saved: Depth=5, Heuristics=3 1
+[2025-02-12 11:33:21] [INFO] Completed Depth-5-H3-H1 | Duration: 00:00:08:10
+[2025-02-12 11:33:21] [INFO] --------------------------------------------------
+[2025-02-12 11:33:21] [INFO] Starting test Depth-6-H1-H2
+[2025-02-12 11:33:21] [STATE] State saved: Depth=6, Heuristics=1 2
+[2025-02-12 12:16:28] [INFO] Completed Depth-6-H1-H2 | Duration: 00:00:43:07
+[2025-02-12 12:16:28] [INFO] --------------------------------------------------
+[2025-02-12 12:16:28] [INFO] Starting test Depth-6-H2-H3
+[2025-02-12 12:16:28] [STATE] State saved: Depth=6, Heuristics=2 3
+[2025-02-12 12:50:45] [INFO] Completed Depth-6-H2-H3 | Duration: 00:00:34:17
+[2025-02-12 12:50:45] [INFO] --------------------------------------------------
+[2025-02-12 12:50:45] [INFO] Starting test Depth-6-H3-H1
+[2025-02-12 12:50:45] [STATE] State saved: Depth=6, Heuristics=3 1
+[2025-02-12 13:13:18] [INFO] Completed Depth-6-H3-H1 | Duration: 00:00:22:32
+[2025-02-12 13:13:18] [INFO] --------------------------------------------------
+[2025-02-12 13:13:18] [INFO] Starting test Depth-7-H1-H2
+[2025-02-12 13:13:18] [STATE] State saved: Depth=7, Heuristics=1 2
+[2025-02-12 14:40:46] [INFO] Completed Depth-7-H1-H2 | Duration: 00:01:27:28
+[2025-02-12 14:40:46] [INFO] --------------------------------------------------
+[2025-02-12 14:40:46] [INFO] Starting test Depth-7-H2-H3
+[2025-02-12 14:40:46] [STATE] State saved: Depth=7, Heuristics=2 3
+[2025-02-12 16:12:04] [INFO] Completed Depth-7-H2-H3 | Duration: 00:01:31:18
+[2025-02-12 16:12:04] [INFO] --------------------------------------------------
+[2025-02-12 16:12:04] [INFO] Starting test Depth-7-H3-H1
+[2025-02-12 16:12:04] [STATE] State saved: Depth=7, Heuristics=3 1
+[2025-02-12 18:08:28] [INFO] Completed Depth-7-H3-H1 | Duration: 00:01:56:23
+[2025-02-12 18:08:28] [INFO] --------------------------------------------------
+[2025-02-12 18:08:28] [INFO] Starting test Depth-8-H1-H2
+[2025-02-12 18:08:28] [STATE] State saved: Depth=8, Heuristics=1 2
+[2025-02-13 08:55:05] [INFO] Completed Depth-8-H1-H2 | Duration: 00:14:46:36
+[2025-02-13 08:55:05] [INFO] --------------------------------------------------
+[2025-02-13 08:55:05] [INFO] Starting test Depth-8-H2-H3
+[2025-02-13 08:55:05] [STATE] State saved: Depth=8, Heuristics=2 3
+[2025-02-14 06:47:14] [INFO] Completed Depth-8-H2-H3 | Duration: 00:21:52:09
+[2025-02-14 06:47:14] [INFO] --------------------------------------------------
+[2025-02-14 06:47:14] [INFO] Starting test Depth-8-H3-H1
+[2025-02-14 06:47:14] [STATE] State saved: Depth=8, Heuristics=3 1
+[2025-02-14 12:41:32] [INFO] Completed Depth-8-H3-H1 | Duration: 00:05:54:17
+[2025-02-14 12:41:32] [INFO] --------------------------------------------------
+[2025-02-14 12:41:32] [SUCCESS] Completed all tests, removed state file
+[2025-02-14 12:41:32] [INFO] 
+
+============================================
+Automation Complete
+Total Tests Run: 24
+End Time: 2025-02-14 12:41:32
+============================================

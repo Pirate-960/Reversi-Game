@@ -585,7 +585,7 @@ def main():
     
     # Start FFmpeg recording
     # ffmpeg_process = start_ffmpeg_recording(video_filename)
-    print(f"Recording started...!")
+    # print(f"Recording started...!")
 
     try:
         # Display game mode selection

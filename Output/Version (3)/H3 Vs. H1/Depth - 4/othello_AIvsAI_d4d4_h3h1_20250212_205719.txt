@@ -1,0 +1,1275 @@
+
+1 . . . . . . . .
+2 . . . . . . . .
+3 . . . . . . . .
+4 . . . O X . . .
+5 . . . X O . . .
+6 . . . . . . . .
+7 . . . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 2, White (O): 2
+
+AI X's turn:
+
+AI Statistics:
+Nodes evaluated: 216
+Time taken: 0.13 seconds
+Nodes per second: 1687
+AI plays: d3
+
+1 . . . . . . . .
+2 . . . . . . . .
+3 . . . X . . . .
+4 . . . X X . . .
+5 . . . X O . . .
+6 . . . . . . . .
+7 . . . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 4, White (O): 1
+Last move: X played d3, flipping 1 disc(s) at: [d4]
+
+AI O's turn:
+
+AI Statistics:
+Nodes evaluated: 189
+Time taken: 0.06 seconds
+Nodes per second: 3000
+AI plays: c3
+
+1 . . . . . . . .
+2 . . . . . . . .
+3 . . O X . . . .
+4 . . . O X . . .
+5 . . . X O . . .
+6 . . . . . . . .
+7 . . . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 3, White (O): 3
+Last move: O played c3, flipping 1 disc(s) at: [d4]
+
+AI X's turn:
+
+AI Statistics:
+Nodes evaluated: 349
+Time taken: 0.18 seconds
+Nodes per second: 1903
+AI plays: c4
+
+1 . . . . . . . .
+2 . . . . . . . .
+3 . . O X . . . .
+4 . . X X X . . .
+5 . . . X O . . .
+6 . . . . . . . .
+7 . . . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 5, White (O): 2
+Last move: X played c4, flipping 1 disc(s) at: [d4]
+
+AI O's turn:
+
+AI Statistics:
+Nodes evaluated: 395
+Time taken: 0.20 seconds
+Nodes per second: 1996
+AI plays: e3
+
+1 . . . . . . . .
+2 . . . . . . . .
+3 . . O O O . . .
+4 . . X X O . . .
+5 . . . X O . . .
+6 . . . . . . . .
+7 . . . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 3, White (O): 5
+Last move: O played e3, flipping 2 disc(s) at: [e4, d3]
+
+AI X's turn:
+
+AI Statistics:
+Nodes evaluated: 1371
+Time taken: 0.83 seconds
+Nodes per second: 1653
+AI plays: d2
+
+1 . . . . . . . .
+2 . . . X . . . .
+3 . . O X O . . .
+4 . . X X O . . .
+5 . . . X O . . .
+6 . . . . . . . .
+7 . . . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 5, White (O): 4
+Last move: X played d2, flipping 1 disc(s) at: [d3]
+
+AI O's turn:
+
+AI Statistics:
+Nodes evaluated: 1101
+Time taken: 0.46 seconds
+Nodes per second: 2380
+AI plays: c1
+
+1 . . O . . . . .
+2 . . . O . . . .
+3 . . O X O . . .
+4 . . X X O . . .
+5 . . . X O . . .
+6 . . . . . . . .
+7 . . . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 4, White (O): 6
+Last move: O played c1, flipping 1 disc(s) at: [d2]
+
+AI X's turn:
+
+AI Statistics:
+Nodes evaluated: 1063
+Time taken: 0.69 seconds
+Nodes per second: 1546
+AI plays: f4
+
+1 . . O . . . . .
+2 . . . O . . . .
+3 . . O X O . . .
+4 . . X X X X . .
+5 . . . X O . . .
+6 . . . . . . . .
+7 . . . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 6, White (O): 5
+Last move: X played f4, flipping 1 disc(s) at: [e4]
+
+AI O's turn:
+
+AI Statistics:
+Nodes evaluated: 749
+Time taken: 0.36 seconds
+Nodes per second: 2103
+AI plays: g3
+
+1 . . O . . . . .
+2 . . . O . . . .
+3 . . O X O . O .
+4 . . X X X O . .
+5 . . . X O . . .
+6 . . . . . . . .
+7 . . . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 5, White (O): 7
+Last move: O played g3, flipping 1 disc(s) at: [f4]
+
+AI X's turn:
+
+AI Statistics:
+Nodes evaluated: 1274
+Time taken: 0.86 seconds
+Nodes per second: 1481
+AI plays: e2
+
+1 . . O . . . . .
+2 . . . O X . . .
+3 . . O X X . O .
+4 . . X X X O . .
+5 . . . X O . . .
+6 . . . . . . . .
+7 . . . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 7, White (O): 6
+Last move: X played e2, flipping 1 disc(s) at: [e3]
+
+AI O's turn:
+
+AI Statistics:
+Nodes evaluated: 1361
+Time taken: 0.77 seconds
+Nodes per second: 1776
+AI plays: e1
+
+1 . . O . O . . .
+2 . . . O O . . .
+3 . . O X O . O .
+4 . . X X O O . .
+5 . . . X O . . .
+6 . . . . . . . .
+7 . . . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 4, White (O): 10
+Last move: O played e1, flipping 3 disc(s) at: [e2, e3, e4]
+
+AI X's turn:
+
+AI Statistics:
+Nodes evaluated: 1241
+Time taken: 0.91 seconds
+Nodes per second: 1366
+AI plays: f3
+
+1 . . O . O . . .
+2 . . . O O . . .
+3 . . O X X X O .
+4 . . X X X O . .
+5 . . . X O . . .
+6 . . . . . . . .
+7 . . . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 7, White (O): 8
+Last move: X played f3, flipping 2 disc(s) at: [e3, e4]
+
+AI O's turn:
+
+AI Statistics:
+Nodes evaluated: 1511
+Time taken: 0.91 seconds
+Nodes per second: 1668
+AI plays: b4
+
+1 . . O . O . . .
+2 . . . O O . . .
+3 . . O X X X O .
+4 . O O O O O . .
+5 . . . X O . . .
+6 . . . . . . . .
+7 . . . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 4, White (O): 12
+Last move: O played b4, flipping 3 disc(s) at: [c4, d4, e4]
+
+AI X's turn:
+
+AI Statistics:
+Nodes evaluated: 1158
+Time taken: 0.94 seconds
+Nodes per second: 1227
+AI plays: c5
+
+1 . . O . O . . .
+2 . . . O O . . .
+3 . . O X X X O .
+4 . O O X O O . .
+5 . . X X O . . .
+6 . . . . . . . .
+7 . . . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 6, White (O): 11
+Last move: X played c5, flipping 1 disc(s) at: [d4]
+
+AI O's turn:
+
+AI Statistics:
+Nodes evaluated: 3030
+Time taken: 2.02 seconds
+Nodes per second: 1501
+AI plays: d6
+
+1 . . O . O . . .
+2 . . . O O . . .
+3 . . O O X X O .
+4 . O O O O O . .
+5 . . O O O . . .
+6 . . . O . . . .
+7 . . . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 2, White (O): 16
+Last move: O played d6, flipping 4 disc(s) at: [d5, d4, d3, c5]
+
+AI X's turn:
+
+AI Statistics:
+Nodes evaluated: 787
+Time taken: 0.67 seconds
+Nodes per second: 1171
+AI plays: b6
+
+1 . . O . O . . .
+2 . . . O O . . .
+3 . . O O X X O .
+4 . O O X O O . .
+5 . . X O O . . .
+6 . X . O . . . .
+7 . . . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 5, White (O): 14
+Last move: X played b6, flipping 2 disc(s) at: [c5, d4]
+
+AI O's turn:
+
+AI Statistics:
+Nodes evaluated: 1353
+Time taken: 1.02 seconds
+Nodes per second: 1330
+AI plays: g4
+
+1 . . O . O . . .
+2 . . . O O . . .
+3 . . O O X O O .
+4 . O O X O O O .
+5 . . X O O . . .
+6 . X . O . . . .
+7 . . . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 4, White (O): 16
+Last move: O played g4, flipping 1 disc(s) at: [f3]
+
+AI X's turn:
+
+AI Statistics:
+Nodes evaluated: 1332
+Time taken: 1.27 seconds
+Nodes per second: 1045
+AI plays: d1
+
+1 . . O X O . . .
+2 . . . X O . . .
+3 . . O X X O O .
+4 . O O X O O O .
+5 . . X O O . . .
+6 . X . O . . . .
+7 . . . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 7, White (O): 14
+Last move: X played d1, flipping 2 disc(s) at: [d2, d3]
+
+AI O's turn:
+
+AI Statistics:
+Nodes evaluated: 1572
+Time taken: 1.29 seconds
+Nodes per second: 1218
+AI plays: c2
+
+1 . . O X O . . .
+2 . . O O O . . .
+3 . . O O X O O .
+4 . O O X O O O .
+5 . . X O O . . .
+6 . X . O . . . .
+7 . . . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 5, White (O): 17
+Last move: O played c2, flipping 2 disc(s) at: [d2, d3]
+
+AI X's turn:
+
+AI Statistics:
+Nodes evaluated: 1875
+Time taken: 1.85 seconds
+Nodes per second: 1016
+AI plays: b1
+
+1 . X X X O . . .
+2 . . O O O . . .
+3 . . O O X O O .
+4 . O O X O O O .
+5 . . X O O . . .
+6 . X . O . . . .
+7 . . . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 7, White (O): 16
+Last move: X played b1, flipping 1 disc(s) at: [c1]
+
+AI O's turn:
+
+AI Statistics:
+Nodes evaluated: 796
+Time taken: 0.67 seconds
+Nodes per second: 1193
+AI plays: a1
+
+1 O O O O O . . .
+2 . . O O O . . .
+3 . . O O X O O .
+4 . O O X O O O .
+5 . . X O O . . .
+6 . X . O . . . .
+7 . . . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 4, White (O): 20
+Last move: O played a1, flipping 3 disc(s) at: [b1, c1, d1]
+
+AI X's turn:
+
+AI Statistics:
+Nodes evaluated: 1505
+Time taken: 1.58 seconds
+Nodes per second: 953
+AI plays: b2
+
+1 O O O O O . . .
+2 . X O O O . . .
+3 . . X O X O O .
+4 . O O X O O O .
+5 . . X O O . . .
+6 . X . O . . . .
+7 . . . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 6, White (O): 19
+Last move: X played b2, flipping 1 disc(s) at: [c3]
+
+AI O's turn:
+
+AI Statistics:
+Nodes evaluated: 1163
+Time taken: 1.06 seconds
+Nodes per second: 1101
+AI plays: b3
+
+1 O O O O O . . .
+2 . O O O O . . .
+3 . O O O X O O .
+4 . O O X O O O .
+5 . . X O O . . .
+6 . X . O . . . .
+7 . . . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 4, White (O): 22
+Last move: O played b3, flipping 2 disc(s) at: [c3, b2]
+
+AI X's turn:
+
+AI Statistics:
+Nodes evaluated: 1101
+Time taken: 1.19 seconds
+Nodes per second: 924
+AI plays: a4
+
+1 O O O O O . . .
+2 . O O O O . . .
+3 . O O O X O O .
+4 X X X X O O O .
+5 . . X O O . . .
+6 . X . O . . . .
+7 . . . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 7, White (O): 20
+Last move: X played a4, flipping 2 disc(s) at: [b4, c4]
+
+AI O's turn:
+
+AI Statistics:
+Nodes evaluated: 678
+Time taken: 0.78 seconds
+Nodes per second: 866
+AI plays: a3
+
+1 O O O O O . . .
+2 . O O O O . . .
+3 O O O O X O O .
+4 X O X X O O O .
+5 . . O O O . . .
+6 . X . O . . . .
+7 . . . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 5, White (O): 23
+Last move: O played a3, flipping 2 disc(s) at: [b4, c5]
+
+AI X's turn:
+
+AI Statistics:
+Nodes evaluated: 917
+Time taken: 1.11 seconds
+Nodes per second: 828
+AI plays: f1
+
+1 O O O O O X . .
+2 . O O O X . . .
+3 O O O X X O O .
+4 X O X X O O O .
+5 . . O O O . . .
+6 . X . O . . . .
+7 . . . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 8, White (O): 21
+Last move: X played f1, flipping 2 disc(s) at: [e2, d3]
+
+AI O's turn:
+
+AI Statistics:
+Nodes evaluated: 572
+Time taken: 0.64 seconds
+Nodes per second: 891
+AI plays: f2
+
+1 O O O O O X . .
+2 . O O O O O . .
+3 O O O X O O O .
+4 X O X O O O O .
+5 . . O O O . . .
+6 . X . O . . . .
+7 . . . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 5, White (O): 25
+Last move: O played f2, flipping 3 disc(s) at: [e2, e3, d4]
+
+AI X's turn:
+
+AI Statistics:
+Nodes evaluated: 807
+Time taken: 0.97 seconds
+Nodes per second: 831
+AI plays: g1
+
+1 O O O O O X X .
+2 . O O O O X . .
+3 O O O X X O O .
+4 X O X X O O O .
+5 . . X O O . . .
+6 . X . O . . . .
+7 . . . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 10, White (O): 21
+Last move: X played g1, flipping 4 disc(s) at: [f2, e3, d4, c5]
+
+AI O's turn:
+
+AI Statistics:
+Nodes evaluated: 797
+Time taken: 0.95 seconds
+Nodes per second: 839
+AI plays: h1
+
+1 O O O O O O O O
+2 . O O O O X . .
+3 O O O X X O O .
+4 X O X X O O O .
+5 . . X O O . . .
+6 . X . O . . . .
+7 . . . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 8, White (O): 24
+Last move: O played h1, flipping 2 disc(s) at: [g1, f1]
+
+AI X's turn:
+
+AI Statistics:
+Nodes evaluated: 840
+Time taken: 1.09 seconds
+Nodes per second: 769
+AI plays: a2
+
+1 O O O O O O O O
+2 X X X X X X . .
+3 X X O X X O O .
+4 X O X X O O O .
+5 . . X O O . . .
+6 . X . O . . . .
+7 . . . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 15, White (O): 18
+Last move: X played a2, flipping 6 disc(s) at: [b2, c2, d2, e2, a3, b3]
+
+AI O's turn:
+
+AI Statistics:
+Nodes evaluated: 870
+Time taken: 1.15 seconds
+Nodes per second: 755
+AI plays: a5
+
+1 O O O O O O O O
+2 O X X X X X . .
+3 O X O X X O O .
+4 O O X X O O O .
+5 O . X O O . . .
+6 . X . O . . . .
+7 . . . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 12, White (O): 22
+Last move: O played a5, flipping 3 disc(s) at: [a4, a3, a2]
+
+AI X's turn:
+
+AI Statistics:
+Nodes evaluated: 1276
+Time taken: 1.73 seconds
+Nodes per second: 736
+AI plays: b5
+
+1 O O O O O O O O
+2 O X X X X X . .
+3 O X O X X O O .
+4 O X X X O O O .
+5 O X X O O . . .
+6 . X . O . . . .
+7 . . . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 14, White (O): 21
+Last move: X played b5, flipping 1 disc(s) at: [b4]
+
+AI O's turn:
+
+AI Statistics:
+Nodes evaluated: 1079
+Time taken: 1.42 seconds
+Nodes per second: 761
+AI plays: b7
+
+1 O O O O O O O O
+2 O O X X X X . .
+3 O O O X X O O .
+4 O O X X O O O .
+5 O O X O O . . .
+6 . O . O . . . .
+7 . O . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 9, White (O): 27
+Last move: O played b7, flipping 5 disc(s) at: [b6, b5, b4, b3, b2]
+
+AI X's turn:
+
+AI Statistics:
+Nodes evaluated: 1038
+Time taken: 1.55 seconds
+Nodes per second: 669
+AI plays: h3
+
+1 O O O O O O O O
+2 O O X X X X . .
+3 O O O X X X X X
+4 O O X X O O O .
+5 O O X O O . . .
+6 . O . O . . . .
+7 . O . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 12, White (O): 25
+Last move: X played h3, flipping 2 disc(s) at: [g3, f3]
+
+AI O's turn:
+
+AI Statistics:
+Nodes evaluated: 643
+Time taken: 0.89 seconds
+Nodes per second: 724
+AI plays: g2
+
+1 O O O O O O O O
+2 O O O O O O O .
+3 O O O X X O O X
+4 O O X X O O O .
+5 O O X O O . . .
+6 . O . O . . . .
+7 . O . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 6, White (O): 32
+Last move: O played g2, flipping 6 disc(s) at: [g3, f2, e2, d2, c2, f3]
+
+AI X's turn:
+
+AI Statistics:
+Nodes evaluated: 651
+Time taken: 0.97 seconds
+Nodes per second: 671
+AI plays: a7
+
+1 O O O O O O O O
+2 O O O O O O O .
+3 O O O X X O O X
+4 O O X X O O O .
+5 O O X O O . . .
+6 . X . O . . . .
+7 X O . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 8, White (O): 31
+Last move: X played a7, flipping 1 disc(s) at: [b6]
+
+AI O's turn:
+
+AI Statistics:
+Nodes evaluated: 281
+Time taken: 0.39 seconds
+Nodes per second: 726
+AI plays: c6
+
+1 O O O O O O O O
+2 O O O O O O O .
+3 O O O X X O O X
+4 O O O X O O O .
+5 O O O O O . . .
+6 . X O O . . . .
+7 X O . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 6, White (O): 34
+Last move: O played c6, flipping 2 disc(s) at: [c5, c4]
+
+AI X's turn:
+
+AI Statistics:
+Nodes evaluated: 965
+Time taken: 1.45 seconds
+Nodes per second: 664
+AI plays: a6
+
+1 O O O O O O O O
+2 O O O O O O O .
+3 O O O X X O O X
+4 O O X X O O O .
+5 O X O O O . . .
+6 X X O O . . . .
+7 X O . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 9, White (O): 32
+Last move: X played a6, flipping 2 disc(s) at: [b5, c4]
+
+AI O's turn:
+
+AI Statistics:
+Nodes evaluated: 322
+Time taken: 0.46 seconds
+Nodes per second: 704
+AI plays: a8
+
+1 O O O O O O O O
+2 O O O O O O O .
+3 O O O X X O O X
+4 O O X X O O O .
+5 O X O O O . . .
+6 O X O O . . . .
+7 O O . . . . . .
+8 O . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 7, White (O): 35
+Last move: O played a8, flipping 2 disc(s) at: [a7, a6]
+
+AI X's turn:
+
+AI Statistics:
+Nodes evaluated: 675
+Time taken: 1.10 seconds
+Nodes per second: 611
+AI plays: c7
+
+1 O O O O O O O O
+2 O O O O O O O .
+3 O O O X X O O X
+4 O O X X O O O .
+5 O X X O O . . .
+6 O X X O . . . .
+7 O O X . . . . .
+8 O . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 10, White (O): 33
+Last move: X played c7, flipping 2 disc(s) at: [c6, c5]
+
+AI O's turn:
+
+AI Statistics:
+Nodes evaluated: 600
+Time taken: 1.01 seconds
+Nodes per second: 596
+AI plays: d7
+
+1 O O O O O O O O
+2 O O O O O O O .
+3 O O O X X O O X
+4 O O X X O O O .
+5 O O X O O . . .
+6 O X O O . . . .
+7 O O O O . . . .
+8 O . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 7, White (O): 37
+Last move: O played d7, flipping 3 disc(s) at: [c7, c6, b5]
+
+AI X's turn:
+
+AI Statistics:
+Nodes evaluated: 621
+Time taken: 1.12 seconds
+Nodes per second: 554
+AI plays: g5
+
+1 O O O O O O O O
+2 O O O O O O O .
+3 O O O X X O O X
+4 O O X X O X O .
+5 O O X O O . X .
+6 O X O O . . . .
+7 O O O O . . . .
+8 O . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 9, White (O): 36
+Last move: X played g5, flipping 1 disc(s) at: [f4]
+
+AI O's turn:
+
+AI Statistics:
+Nodes evaluated: 433
+Time taken: 0.75 seconds
+Nodes per second: 575
+AI plays: h6
+
+1 O O O O O O O O
+2 O O O O O O O .
+3 O O O X O O O X
+4 O O X X O O O .
+5 O O X O O . O .
+6 O X O O . . . O
+7 O O O O . . . .
+8 O . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 6, White (O): 40
+Last move: O played h6, flipping 3 disc(s) at: [g5, f4, e3]
+
+AI X's turn:
+
+AI Statistics:
+Nodes evaluated: 409
+Time taken: 0.71 seconds
+Nodes per second: 575
+AI plays: e6
+
+1 O O O O O O O O
+2 O O O O O O O .
+3 O O O X O O O X
+4 O O X X O O O .
+5 O O X X O . O .
+6 O X X X X . . O
+7 O O O O . . . .
+8 O . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 10, White (O): 37
+Last move: X played e6, flipping 3 disc(s) at: [d6, c6, d5]
+
+AI O's turn:
+
+AI Statistics:
+Nodes evaluated: 483
+Time taken: 0.83 seconds
+Nodes per second: 583
+AI plays: e7
+
+1 O O O O O O O O
+2 O O O O O O O .
+3 O O O X O O O X
+4 O O X X O O O .
+5 O O O X O . O .
+6 O X X O O . . O
+7 O O O O O . . .
+8 O . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 7, White (O): 41
+Last move: O played e7, flipping 3 disc(s) at: [e6, d6, c5]
+
+AI X's turn:
+
+AI Statistics:
+Nodes evaluated: 327
+Time taken: 0.61 seconds
+Nodes per second: 536
+AI plays: f5
+
+1 O O O O O O O O
+2 O O O O O O O .
+3 O O O X O O O X
+4 O O X X X O X .
+5 O O O X X X O .
+6 O X X O O . . O
+7 O O O O O . . .
+8 O . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 11, White (O): 38
+Last move: X played f5, flipping 3 disc(s) at: [e5, e4, g4]
+
+AI O's turn:
+
+AI Statistics:
+Nodes evaluated: 501
+Time taken: 0.97 seconds
+Nodes per second: 516
+AI plays: g6
+
+1 O O O O O O O O
+2 O O O O O O O .
+3 O O O O O O O X
+4 O O X X O O X .
+5 O O O X X O O .
+6 O X X O O . O O
+7 O O O O O . . .
+8 O . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 8, White (O): 42
+Last move: O played g6, flipping 3 disc(s) at: [f5, e4, d3]
+
+AI X's turn:
+
+AI Statistics:
+Nodes evaluated: 563
+Time taken: 1.07 seconds
+Nodes per second: 527
+AI plays: h2
+
+1 O O O O O O O O
+2 O O O O O O O X
+3 O O O O O O X X
+4 O O X X O X X .
+5 O O O X X O O .
+6 O X X O O . O O
+7 O O O O O . . .
+8 O . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 11, White (O): 40
+Last move: X played h2, flipping 2 disc(s) at: [g3, f4]
+
+AI O's turn:
+
+AI Statistics:
+Nodes evaluated: 217
+Time taken: 0.39 seconds
+Nodes per second: 553
+AI plays: h4
+
+1 O O O O O O O O
+2 O O O O O O O O
+3 O O O O O O O O
+4 O O X X O O O O
+5 O O O X X O O .
+6 O X X O O . O O
+7 O O O O O . . .
+8 O . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 6, White (O): 46
+Last move: O played h4, flipping 5 disc(s) at: [g4, f4, h3, h2, g3]
+
+AI X's turn:
+
+AI Statistics:
+Nodes evaluated: 219
+Time taken: 0.46 seconds
+Nodes per second: 477
+AI plays: f6
+
+1 O O O O O O O O
+2 O O O O O O O O
+3 O O O O O O O O
+4 O O X X O O O O
+5 O O O X X O O .
+6 O X X X X X O O
+7 O O O O O . . .
+8 O . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 9, White (O): 44
+Last move: X played f6, flipping 2 disc(s) at: [e6, d6]
+
+AI O's turn:
+
+AI Statistics:
+Nodes evaluated: 88
+Time taken: 0.22 seconds
+Nodes per second: 407
+AI plays: g7
+
+1 O O O O O O O O
+2 O O O O O O O O
+3 O O O O O O O O
+4 O O X O O O O O
+5 O O O X O O O .
+6 O X X X X O O O
+7 O O O O O . O .
+8 O . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 6, White (O): 48
+Last move: O played g7, flipping 3 disc(s) at: [f6, e5, d4]
+
+AI X's turn:
+
+AI Statistics:
+Nodes evaluated: 149
+Time taken: 0.31 seconds
+Nodes per second: 474
+AI plays: h5
+
+1 O O O O O O O O
+2 O O O O O O O O
+3 O O O O O O O O
+4 O O X O O O O O
+5 O O O X X X X X
+6 O X X X X O O O
+7 O O O O O . O .
+8 O . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 10, White (O): 45
+Last move: X played h5, flipping 3 disc(s) at: [g5, f5, e5]
+
+AI O's turn:
+
+AI Statistics:
+Nodes evaluated: 95
+Time taken: 0.20 seconds
+Nodes per second: 478
+AI plays: f7
+
+1 O O O O O O O O
+2 O O O O O O O O
+3 O O O O O O O O
+4 O O O O O O O O
+5 O O O O X X X X
+6 O X X X O O O O
+7 O O O O O O O .
+8 O . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 7, White (O): 49
+Last move: O played f7, flipping 3 disc(s) at: [e6, d5, c4]
+
+AI X's turn:
+
+AI Statistics:
+Nodes evaluated: 346
+Time taken: 0.74 seconds
+Nodes per second: 470
+AI plays: h8
+
+1 O O O O O O O O
+2 O O O O O O O O
+3 O O O O O O O O
+4 O O O O O O O O
+5 O O O O X X X X
+6 O X X X O X O O
+7 O O O O O O X .
+8 O . . . . . . X
+  a b c d e f g h
+
+Current score - Black (X): 10, White (O): 47
+Last move: X played h8, flipping 2 disc(s) at: [g7, f6]
+
+AI O's turn:
+
+AI Statistics:
+Nodes evaluated: 123
+Time taken: 0.25 seconds
+Nodes per second: 489
+AI plays: h7
+
+1 O O O O O O O O
+2 O O O O O O O O
+3 O O O O O O O O
+4 O O O O O O O O
+5 O O O O X X X X
+6 O X X X O X O O
+7 O O O O O O O O
+8 O . . . . . . X
+  a b c d e f g h
+
+Current score - Black (X): 9, White (O): 49
+Last move: O played h7, flipping 1 disc(s) at: [g7]
+
+AI X's turn:
+
+AI Statistics:
+Nodes evaluated: 154
+Time taken: 0.32 seconds
+Nodes per second: 485
+AI plays: b8
+
+1 O O O O O O O O
+2 O O O O O O O O
+3 O O O O O O O O
+4 O O O O O O O O
+5 O O O O X X X X
+6 O X X X O X O O
+7 O X X O O O O O
+8 O X . . . . . X
+  a b c d e f g h
+
+Current score - Black (X): 12, White (O): 47
+Last move: X played b8, flipping 2 disc(s) at: [b7, c7]
+
+AI O's turn:
+
+AI Statistics:
+Nodes evaluated: 34
+Time taken: 0.08 seconds
+Nodes per second: 444
+AI plays: c8
+
+1 O O O O O O O O
+2 O O O O O O O O
+3 O O O O O O O O
+4 O O O O O O O O
+5 O O O O X X X X
+6 O X O X O X O O
+7 O O O O O O O O
+8 O O O . . . . X
+  a b c d e f g h
+
+Current score - Black (X): 8, White (O): 52
+Last move: O played c8, flipping 4 disc(s) at: [b8, c7, c6, b7]
+
+AI X's turn:
+
+AI Statistics:
+Nodes evaluated: 43
+Time taken: 0.09 seconds
+Nodes per second: 491
+AI plays: d8
+
+1 O O O O O O O O
+2 O O O O O O O O
+3 O O O O O O O O
+4 O O O O O O O O
+5 O O O O X X X X
+6 O X O X O X O O
+7 O O X X X O O O
+8 O O O X . . . X
+  a b c d e f g h
+
+Current score - Black (X): 12, White (O): 49
+Last move: X played d8, flipping 3 disc(s) at: [d7, c7, e7]
+
+AI O's turn:
+
+AI Statistics:
+Nodes evaluated: 10
+Time taken: 0.02 seconds
+Nodes per second: 500
+AI plays: e8
+
+1 O O O O O O O O
+2 O O O O O O O O
+3 O O O O O O O O
+4 O O O O O O O O
+5 O O O O X X X X
+6 O X O X O X O O
+7 O O X O O O O O
+8 O O O O O . . X
+  a b c d e f g h
+
+Current score - Black (X): 9, White (O): 53
+Last move: O played e8, flipping 3 disc(s) at: [d8, e7, d7]
+
+AI X's turn:
+
+AI Statistics:
+Nodes evaluated: 4
+Time taken: 0.01 seconds
+Nodes per second: 500
+AI plays: g8
+
+1 O O O O O O O O
+2 O O O O O O O O
+3 O O O O O O O O
+4 O O O O O O O O
+5 O O O O X X X X
+6 O X O X O X X O
+7 O O X O O O X O
+8 O O O O O . X X
+  a b c d e f g h
+
+Current score - Black (X): 12, White (O): 51
+Last move: X played g8, flipping 2 disc(s) at: [g7, g6]
+
+AI O's turn:
+
+AI Statistics:
+Nodes evaluated: 1
+Time taken: 0.00 seconds
+Nodes per second: 500
+AI plays: f8
+
+1 O O O O O O O O
+2 O O O O O O O O
+3 O O O O O O O O
+4 O O O O O O O O
+5 O O O O X X X X
+6 O X O X O X X O
+7 O O X O O O O O
+8 O O O O O O X X
+  a b c d e f g h
+
+Game Over!
+Final score - Black (X): 11, White (O): 53
+White (O) wins!
+
+Game log saved to othello_game_20250212_205719.json

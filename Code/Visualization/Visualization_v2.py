@@ -301,9 +301,9 @@ def visualize_game(game_log):
         # Create and save the animation
         print("Creating game animation...")
         anim = visualizer.animate_game()
-        anim.save('othello_game.gif', writer='pillow')
+        anim.save('othello_game_v2.gif', writer='pillow')
         print("Displaying animation...")
-        print("Animation saved as 'othello_game.gif'")
+        print("Animation saved as 'othello_game_v2.gif'")
         
         # Generate additional visualizations
         print("Generating heatmap...")

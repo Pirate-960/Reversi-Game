@@ -1,6 +1,14 @@
 import time
+import os
+import sys
 from datetime import datetime
-from Game.Othello_v1 import Othello, OthelloAI
+
+# Add the project root to Python path
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..'))
+sys.path.append(project_root)
+
+# import statement
+from Code.Game.Othello_v1 import Othello, OthelloAI, Tee
 
 def test_ai_performance():
     """
@@ -11,7 +19,7 @@ def test_ai_performance():
     
     # Create a timestamp for the results file
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-    results_file = f"ai_performance_test_{timestamp}.csv"
+    results_file = f"Performance Test/Version (1)/ai_performance_test_{timestamp}.csv"
     
     # Write header to results file
     with open(results_file, 'w') as f:
@@ -97,7 +105,7 @@ if __name__ == "__main__":
     import glob
     import os
     
-    files = glob.glob("ai_performance_test_*.csv")
+    files = glob.glob("Performance Test/Version (1)/ai_performance_test_*.csv")
     if files:
         latest_file = max(files, key=os.path.getctime)
         analyze_results(latest_file)
