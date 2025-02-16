@@ -123,17 +123,32 @@ $depth2
 }
 finally {
     # Final summary
-    if ($i -ge $depthCombinations.Count) {
-        $completionMessage = @"
 
+    # Extract Start Time dynamically from log file instead of substring indexing
+    # Read full log content
+    $logContent = Get-Content -Path $logFile -Raw
+    # Use regex to find Start Time line and extract timestamp
+    $startTimeMatch = $logContent | Select-String -Pattern "Start Time:\s*(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})"
+
+    # Ensure a match was found before processing
+    if ($startTimeMatch) {
+        # Convert extracted string to DateTime
+        $startTime = [DateTime]::Parse($startTimeMatch.Matches.Groups[1].Value)
+        # Calculate time span properly
+        $totalDuration = New-TimeSpan -Start $startTime -End (Get-Date)
+
+        $completionMessage = @"
 
 ============================================
 Benchmark Complete
 Total Matches: $($depthCombinations.Count)
-Total Execution Time: $((New-TimeSpan -Start $logHeader.Substring(109,19) -End (Get-Date)).ToString("dd\.hh\:mm\:ss"))
+Total Execution Time: $($totalDuration.ToString("dd\:hh\:mm\:ss"))
 End Time: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')
 ============================================
 "@
         Add-Content -Path $logFile -Value $completionMessage
+    } else {
+        # Handle missing start time gracefully
+        Write-Log "Start Time not found in log. Time calculation skipped." -Status "WARNING"
     }
 }

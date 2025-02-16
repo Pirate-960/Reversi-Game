@@ -1,0 +1,273 @@
+============================================
+Othello AI Benchmark Log
+Core Engine: OthelloGameEngine.py
+Advanced Features: Pattern Matching, Mobility Analysis, Stability Evaluation
+Start Time: 2025-02-14 19:18:12
+Total Tests: 64
+Depth Range: 1-8 for both AI players
+============================================
+
+[2025-02-14 19:18:12] [INFO] Starting test AI1-d1_vs_AI2-d1 (Test #1/64)
+[2025-02-14 19:18:12] [STATE] State saved: TestIndex=0
+[2025-02-14 19:18:13] [INFO] Completed AI1-d1_vs_AI2-d1 | Duration: 00:00:00:01 | Result: Black (AI1-d1) | Final score - Black: 46, White: 18
+[2025-02-14 19:18:13] [INFO] --------------------------------------------------
+[2025-02-14 19:18:13] [INFO] Starting test AI1-d1_vs_AI2-d2 (Test #2/64)
+[2025-02-14 19:18:13] [STATE] State saved: TestIndex=1
+[2025-02-14 19:18:16] [INFO] Completed AI1-d1_vs_AI2-d2 | Duration: 00:00:00:02 | Result: White (AI2-d2) | Final score - Black: 16, White: 48
+[2025-02-14 19:18:16] [INFO] --------------------------------------------------
+[2025-02-14 19:18:16] [INFO] Starting test AI1-d1_vs_AI2-d3 (Test #3/64)
+[2025-02-14 19:18:16] [STATE] State saved: TestIndex=2
+[2025-02-14 19:18:31] [INFO] Completed AI1-d1_vs_AI2-d3 | Duration: 00:00:00:15 | Result: Black (AI1-d1) | Final score - Black: 36, White: 28
+[2025-02-14 19:18:31] [INFO] --------------------------------------------------
+[2025-02-14 19:18:31] [INFO] Starting test AI1-d1_vs_AI2-d4 (Test #4/64)
+[2025-02-14 19:18:31] [STATE] State saved: TestIndex=3
+[2025-02-14 19:19:19] [INFO] Completed AI1-d1_vs_AI2-d4 | Duration: 00:00:00:47 | Result: White (AI2-d4) | Final score - Black: 30, White: 34
+[2025-02-14 19:19:19] [INFO] --------------------------------------------------
+[2025-02-14 19:19:19] [INFO] Starting test AI1-d1_vs_AI2-d5 (Test #5/64)
+[2025-02-14 19:19:19] [STATE] State saved: TestIndex=4
+[2025-02-14 19:24:45] [INFO] Completed AI1-d1_vs_AI2-d5 | Duration: 00:00:05:25 | Result: Black (AI1-d1) | Final score - Black: 36, White: 28
+[2025-02-14 19:24:45] [INFO] --------------------------------------------------
+[2025-02-14 19:24:45] [INFO] Starting test AI1-d1_vs_AI2-d6 (Test #6/64)
+[2025-02-14 19:24:45] [STATE] State saved: TestIndex=5
+[2025-02-14 19:34:24] [INFO] Completed AI1-d1_vs_AI2-d6 | Duration: 00:00:09:38 | Result: White (AI2-d6) | Final score - Black: 29, White: 35
+[2025-02-14 19:34:24] [INFO] --------------------------------------------------
+[2025-02-14 19:34:24] [INFO] Starting test AI1-d1_vs_AI2-d7 (Test #7/64)
+[2025-02-14 19:34:24] [STATE] State saved: TestIndex=6
+[2025-02-14 20:13:51] [INFO] Completed AI1-d1_vs_AI2-d7 | Duration: 00:00:39:27 | Result: White (AI2-d7) | Final score - Black: 20, White: 44
+[2025-02-14 20:13:51] [INFO] --------------------------------------------------
+[2025-02-14 20:13:51] [INFO] Starting test AI1-d1_vs_AI2-d8 (Test #8/64)
+[2025-02-14 20:13:51] [STATE] State saved: TestIndex=7
+[2025-02-14 21:11:28] [INFO] Completed AI1-d1_vs_AI2-d8 | Duration: 00:00:57:36 | Result: Black (AI1-d1) | Final score - Black: 46, White: 18
+[2025-02-14 21:11:28] [INFO] --------------------------------------------------
+[2025-02-14 21:11:28] [INFO] Starting test AI1-d2_vs_AI2-d1 (Test #9/64)
+[2025-02-14 21:11:28] [STATE] State saved: TestIndex=8
+[2025-02-14 21:11:31] [INFO] Completed AI1-d2_vs_AI2-d1 | Duration: 00:00:00:02 | Result: Black (AI1-d2) | Final score - Black: 44, White: 20
+[2025-02-14 21:11:31] [INFO] --------------------------------------------------
+[2025-02-14 21:11:31] [INFO] Starting test AI1-d2_vs_AI2-d2 (Test #10/64)
+[2025-02-14 21:11:31] [STATE] State saved: TestIndex=9
+[2025-02-14 21:11:34] [INFO] Completed AI1-d2_vs_AI2-d2 | Duration: 00:00:00:03 | Result: White (AI2-d2) | Final score - Black: 17, White: 47
+[2025-02-14 21:11:34] [INFO] --------------------------------------------------
+[2025-02-14 21:11:34] [INFO] Starting test AI1-d2_vs_AI2-d3 (Test #11/64)
+[2025-02-14 21:11:34] [STATE] State saved: TestIndex=10
+[2025-02-14 21:11:43] [INFO] Completed AI1-d2_vs_AI2-d3 | Duration: 00:00:00:08 | Result: Black (AI1-d2) | Final score - Black: 39, White: 24
+[2025-02-14 21:11:43] [INFO] --------------------------------------------------
+[2025-02-14 21:11:43] [INFO] Starting test AI1-d2_vs_AI2-d4 (Test #12/64)
+[2025-02-14 21:11:43] [STATE] State saved: TestIndex=11
+[2025-02-14 21:11:52] [INFO] Completed AI1-d2_vs_AI2-d4 | Duration: 00:00:00:09 | Result: Black (AI1-d2) | Final score - Black: 47, White: 0
+[2025-02-14 21:11:52] [INFO] --------------------------------------------------
+[2025-02-14 21:11:52] [INFO] Starting test AI1-d2_vs_AI2-d5 (Test #13/64)
+[2025-02-14 21:11:52] [STATE] State saved: TestIndex=12
+[2025-02-14 21:14:19] [INFO] Completed AI1-d2_vs_AI2-d5 | Duration: 00:00:02:26 | Result: Black (AI1-d2) | Final score - Black: 50, White: 14
+[2025-02-14 21:14:19] [INFO] --------------------------------------------------
+[2025-02-14 21:14:19] [INFO] Starting test AI1-d2_vs_AI2-d6 (Test #14/64)
+[2025-02-14 21:14:19] [STATE] State saved: TestIndex=13
+[2025-02-14 21:21:40] [INFO] Completed AI1-d2_vs_AI2-d6 | Duration: 00:00:07:20 | Result: Black (AI1-d2) | Final score - Black: 59, White: 5
+[2025-02-14 21:21:40] [INFO] --------------------------------------------------
+[2025-02-14 21:21:40] [INFO] Starting test AI1-d2_vs_AI2-d7 (Test #15/64)
+[2025-02-14 21:21:40] [STATE] State saved: TestIndex=14
+[2025-02-14 21:30:40] [INFO] Completed AI1-d2_vs_AI2-d7 | Duration: 00:00:09:00 | Result: Black (AI1-d2) | Final score - Black: 9, White: 55
+[2025-02-14 21:30:40] [INFO] --------------------------------------------------
+[2025-02-14 21:30:40] [INFO] Starting test AI1-d2_vs_AI2-d8 (Test #16/64)
+[2025-02-14 21:30:40] [STATE] State saved: TestIndex=15
+[2025-02-14 23:48:55] [INFO] Completed AI1-d2_vs_AI2-d8 | Duration: 00:02:18:14 | Result: Black (AI1-d2) | Final score - Black: 44, White: 20
+[2025-02-14 23:48:55] [INFO] --------------------------------------------------
+[2025-02-14 23:48:55] [INFO] Starting test AI1-d3_vs_AI2-d1 (Test #17/64)
+[2025-02-14 23:48:55] [STATE] State saved: TestIndex=16
+[2025-02-14 23:49:23] [INFO] Completed AI1-d3_vs_AI2-d1 | Duration: 00:00:00:28 | Result: White (AI2-d1) | Final score - Black: 19, White: 45
+[2025-02-14 23:49:23] [INFO] --------------------------------------------------
+[2025-02-14 23:49:23] [INFO] Starting test AI1-d3_vs_AI2-d2 (Test #18/64)
+[2025-02-14 23:49:23] [STATE] State saved: TestIndex=17
+[2025-02-14 23:49:39] [INFO] Completed AI1-d3_vs_AI2-d2 | Duration: 00:00:00:15 | Result: White (AI2-d2) | Final score - Black: 24, White: 40
+[2025-02-14 23:49:39] [INFO] --------------------------------------------------
+[2025-02-14 23:49:39] [INFO] Starting test AI1-d3_vs_AI2-d3 (Test #19/64)
+[2025-02-14 23:49:39] [STATE] State saved: TestIndex=18
+[2025-02-14 23:50:30] [INFO] Completed AI1-d3_vs_AI2-d3 | Duration: 00:00:00:51 | Result: Black (AI1-d3) | Final score - Black: 33, White: 31
+[2025-02-14 23:50:30] [INFO] --------------------------------------------------
+[2025-02-14 23:50:30] [INFO] Starting test AI1-d3_vs_AI2-d4 (Test #20/64)
+[2025-02-14 23:50:30] [STATE] State saved: TestIndex=19
+[2025-02-14 23:50:45] [INFO] Completed AI1-d3_vs_AI2-d4 | Duration: 00:00:00:14 | Result: Black (AI1-d3) | Final score - Black: 21, White: 0
+[2025-02-14 23:50:45] [INFO] --------------------------------------------------
+[2025-02-14 23:50:45] [INFO] Starting test AI1-d3_vs_AI2-d5 (Test #21/64)
+[2025-02-14 23:50:45] [STATE] State saved: TestIndex=20
+[2025-02-14 23:56:37] [INFO] Completed AI1-d3_vs_AI2-d5 | Duration: 00:00:05:51 | Result: White (AI2-d5) | Final score - Black: 15, White: 49
+[2025-02-14 23:56:37] [INFO] --------------------------------------------------
+[2025-02-14 23:56:37] [INFO] Starting test AI1-d3_vs_AI2-d6 (Test #22/64)
+[2025-02-14 23:56:37] [STATE] State saved: TestIndex=21
+[2025-02-15 00:11:30] [INFO] Completed AI1-d3_vs_AI2-d6 | Duration: 00:00:14:53 | Result: White (AI2-d6) | Final score - Black: 25, White: 39
+[2025-02-15 00:11:30] [INFO] --------------------------------------------------
+[2025-02-15 00:11:30] [INFO] Starting test AI1-d3_vs_AI2-d7 (Test #23/64)
+[2025-02-15 00:11:30] [STATE] State saved: TestIndex=22
+[2025-02-15 00:41:27] [INFO] Completed AI1-d3_vs_AI2-d7 | Duration: 00:00:29:56 | Result: Black (AI1-d3) | Final score - Black: 50, White: 14
+[2025-02-15 00:41:27] [INFO] --------------------------------------------------
+[2025-02-15 00:41:27] [INFO] Starting test AI1-d3_vs_AI2-d8 (Test #24/64)
+[2025-02-15 00:41:27] [STATE] State saved: TestIndex=23
+[2025-02-15 01:52:27] [INFO] Completed AI1-d3_vs_AI2-d8 | Duration: 00:01:10:59 | Result: Black (AI1-d3) | Final score - Black: 43, White: 21
+[2025-02-15 01:52:27] [INFO] --------------------------------------------------
+[2025-02-15 01:52:27] [INFO] Starting test AI1-d4_vs_AI2-d1 (Test #25/64)
+[2025-02-15 01:52:27] [STATE] State saved: TestIndex=24
+[2025-02-15 01:53:07] [INFO] Completed AI1-d4_vs_AI2-d1 | Duration: 00:00:00:40 | Result: Black (AI1-d4) | Final score - Black: 53, White: 11
+[2025-02-15 01:53:07] [INFO] --------------------------------------------------
+[2025-02-15 01:53:07] [INFO] Starting test AI1-d4_vs_AI2-d2 (Test #26/64)
+[2025-02-15 01:53:07] [STATE] State saved: TestIndex=25
+[2025-02-15 01:54:06] [INFO] Completed AI1-d4_vs_AI2-d2 | Duration: 00:00:00:58 | Result: Black (AI1-d4) | Final score - Black: 43, White: 21
+[2025-02-15 01:54:06] [INFO] --------------------------------------------------
+[2025-02-15 01:54:06] [INFO] Starting test AI1-d4_vs_AI2-d3 (Test #27/64)
+[2025-02-15 01:54:06] [STATE] State saved: TestIndex=26
+[2025-02-15 01:55:14] [INFO] Completed AI1-d4_vs_AI2-d3 | Duration: 00:00:01:08 | Result: Black (AI1-d4) | Final score - Black: 43, White: 21
+[2025-02-15 01:55:14] [INFO] --------------------------------------------------
+[2025-02-15 01:55:14] [INFO] Starting test AI1-d4_vs_AI2-d4 (Test #28/64)
+[2025-02-15 01:55:14] [STATE] State saved: TestIndex=27
+[2025-02-15 01:57:22] [INFO] Completed AI1-d4_vs_AI2-d4 | Duration: 00:00:02:07 | Result: Black (AI1-d4) | Final score - Black: 36, White: 27
+[2025-02-15 01:57:22] [INFO] --------------------------------------------------
+[2025-02-15 01:57:22] [INFO] Starting test AI1-d4_vs_AI2-d5 (Test #29/64)
+[2025-02-15 01:57:22] [STATE] State saved: TestIndex=28
+[2025-02-15 02:02:16] [INFO] Completed AI1-d4_vs_AI2-d5 | Duration: 00:00:04:54 | Result: Black (AI1-d4) | Final score - Black: 42, White: 22
+[2025-02-15 02:02:16] [INFO] --------------------------------------------------
+[2025-02-15 02:02:16] [INFO] Starting test AI1-d4_vs_AI2-d6 (Test #30/64)
+[2025-02-15 02:02:16] [STATE] State saved: TestIndex=29
+[2025-02-15 02:13:53] [INFO] Completed AI1-d4_vs_AI2-d6 | Duration: 00:00:11:36 | Result: Black (AI1-d4) | Final score - Black: 36, White: 28
+[2025-02-15 02:13:53] [INFO] --------------------------------------------------
+[2025-02-15 02:13:53] [INFO] Starting test AI1-d4_vs_AI2-d7 (Test #31/64)
+[2025-02-15 02:13:53] [STATE] State saved: TestIndex=30
+[2025-02-15 02:33:42] [INFO] Completed AI1-d4_vs_AI2-d7 | Duration: 00:00:19:49 | Result: Black (AI1-d4) | Final score - Black: 45, White: 19
+[2025-02-15 02:33:42] [INFO] --------------------------------------------------
+[2025-02-15 02:33:42] [INFO] Starting test AI1-d4_vs_AI2-d8 (Test #32/64)
+[2025-02-15 02:33:42] [STATE] State saved: TestIndex=31
+[2025-02-15 04:05:40] [INFO] Completed AI1-d4_vs_AI2-d8 | Duration: 00:01:31:58 | Result: White (AI2-d8) | Final score - Black: 29, White: 35
+[2025-02-15 04:05:40] [INFO] --------------------------------------------------
+[2025-02-15 04:05:40] [INFO] Starting test AI1-d5_vs_AI2-d1 (Test #33/64)
+[2025-02-15 04:05:40] [STATE] State saved: TestIndex=32
+[2025-02-15 04:10:41] [INFO] Completed AI1-d5_vs_AI2-d1 | Duration: 00:00:05:00 | Result: Black (AI1-d5) | Final score - Black: 38, White: 26
+[2025-02-15 04:10:41] [INFO] --------------------------------------------------
+[2025-02-15 04:10:41] [INFO] Starting test AI1-d5_vs_AI2-d2 (Test #34/64)
+[2025-02-15 04:10:41] [STATE] State saved: TestIndex=33
+[2025-02-15 04:15:18] [INFO] Completed AI1-d5_vs_AI2-d2 | Duration: 00:00:04:36 | Result: White (AI2-d2) | Final score - Black: 27, White: 37
+[2025-02-15 04:15:18] [INFO] --------------------------------------------------
+[2025-02-15 04:15:18] [INFO] Starting test AI1-d5_vs_AI2-d3 (Test #35/64)
+[2025-02-15 04:15:18] [STATE] State saved: TestIndex=34
+[2025-02-15 04:21:01] [INFO] Completed AI1-d5_vs_AI2-d3 | Duration: 00:00:05:43 | Result: White (AI2-d3) | Final score - Black: 28, White: 36
+[2025-02-15 04:21:01] [INFO] --------------------------------------------------
+[2025-02-15 04:21:01] [INFO] Starting test AI1-d5_vs_AI2-d4 (Test #36/64)
+[2025-02-15 04:21:01] [STATE] State saved: TestIndex=35
+[2025-02-15 04:26:02] [INFO] Completed AI1-d5_vs_AI2-d4 | Duration: 00:00:05:01 | Result: White (AI2-d4) | Final score - Black: 15, White: 49
+[2025-02-15 04:26:02] [INFO] --------------------------------------------------
+[2025-02-15 04:26:02] [INFO] Starting test AI1-d5_vs_AI2-d5 (Test #37/64)
+[2025-02-15 04:26:02] [STATE] State saved: TestIndex=36
+[2025-02-15 04:34:38] [INFO] Completed AI1-d5_vs_AI2-d5 | Duration: 00:00:08:36 | Result: Black (AI1-d5) | Final score - Black: 36, White: 28
+[2025-02-15 04:34:38] [INFO] --------------------------------------------------
+[2025-02-15 04:34:38] [INFO] Starting test AI1-d5_vs_AI2-d6 (Test #38/64)
+[2025-02-15 04:34:38] [STATE] State saved: TestIndex=37
+[2025-02-15 05:03:39] [INFO] Completed AI1-d5_vs_AI2-d6 | Duration: 00:00:29:00 | Result: White (AI2-d6) | Final score - Black: 14, White: 50
+[2025-02-15 05:03:39] [INFO] --------------------------------------------------
+[2025-02-15 05:03:39] [INFO] Starting test AI1-d5_vs_AI2-d7 (Test #39/64)
+[2025-02-15 05:03:39] [STATE] State saved: TestIndex=38
+[2025-02-15 05:29:14] [INFO] Completed AI1-d5_vs_AI2-d7 | Duration: 00:00:25:35 | Result: White (AI2-d7) | Final score - Black: 27, White: 37
+[2025-02-15 05:29:14] [INFO] --------------------------------------------------
+[2025-02-15 05:29:14] [INFO] Starting test AI1-d5_vs_AI2-d8 (Test #40/64)
+[2025-02-15 05:29:14] [STATE] State saved: TestIndex=39
+[2025-02-15 07:33:52] [INFO] Completed AI1-d5_vs_AI2-d8 | Duration: 00:02:04:37 | Result: White (AI2-d8) | Final score - Black: 22, White: 42
+[2025-02-15 07:33:52] [INFO] --------------------------------------------------
+[2025-02-15 07:33:52] [INFO] Starting test AI1-d6_vs_AI2-d1 (Test #41/64)
+[2025-02-15 07:33:52] [STATE] State saved: TestIndex=40
+[2025-02-15 07:54:52] [INFO] Completed AI1-d6_vs_AI2-d1 | Duration: 00:00:21:00 | Result: White (AI2-d1) | Final score - Black: 22, White: 42
+[2025-02-15 07:54:52] [INFO] --------------------------------------------------
+[2025-02-15 07:54:52] [INFO] Starting test AI1-d6_vs_AI2-d2 (Test #42/64)
+[2025-02-15 07:54:52] [STATE] State saved: TestIndex=41
+[2025-02-15 08:02:33] [INFO] Completed AI1-d6_vs_AI2-d2 | Duration: 00:00:07:40 | Result: White (AI2-d2) | Final score - Black: 19, White: 45
+[2025-02-15 08:02:33] [INFO] --------------------------------------------------
+[2025-02-15 08:02:33] [INFO] Starting test AI1-d6_vs_AI2-d3 (Test #43/64)
+[2025-02-15 08:02:33] [STATE] State saved: TestIndex=42
+[2025-02-15 08:17:42] [INFO] Completed AI1-d6_vs_AI2-d3 | Duration: 00:00:15:09 | Result: Draw | Final score - Black: 32, White: 32
+[2025-02-15 08:17:42] [INFO] --------------------------------------------------
+[2025-02-15 08:17:42] [INFO] Starting test AI1-d6_vs_AI2-d4 (Test #44/64)
+[2025-02-15 08:17:42] [STATE] State saved: TestIndex=43
+[2025-02-15 08:24:43] [INFO] Completed AI1-d6_vs_AI2-d4 | Duration: 00:00:07:01 | Result: White (AI2-d4) | Final score - Black: 3, White: 60
+[2025-02-15 08:24:43] [INFO] --------------------------------------------------
+[2025-02-15 08:24:43] [INFO] Starting test AI1-d6_vs_AI2-d5 (Test #45/64)
+[2025-02-15 08:24:43] [STATE] State saved: TestIndex=44
+[2025-02-15 08:46:03] [INFO] Completed AI1-d6_vs_AI2-d5 | Duration: 00:00:21:19 | Result: Black (AI1-d6) | Final score - Black: 36, White: 28
+[2025-02-15 08:46:03] [INFO] --------------------------------------------------
+[2025-02-15 08:46:03] [INFO] Starting test AI1-d6_vs_AI2-d6 (Test #46/64)
+[2025-02-15 08:46:03] [STATE] State saved: TestIndex=45
+[2025-02-15 09:23:27] [INFO] Completed AI1-d6_vs_AI2-d6 | Duration: 00:00:37:23 | Result: White (AI2-d6) | Final score - Black: 24, White: 40
+[2025-02-15 09:23:27] [INFO] --------------------------------------------------
+[2025-02-15 09:23:27] [INFO] Starting test AI1-d6_vs_AI2-d7 (Test #47/64)
+[2025-02-15 09:23:27] [STATE] State saved: TestIndex=46
+[2025-02-15 10:08:11] [INFO] Completed AI1-d6_vs_AI2-d7 | Duration: 00:00:44:43 | Result: Black (AI1-d6) | Final score - Black: 34, White: 30
+[2025-02-15 10:08:11] [INFO] --------------------------------------------------
+[2025-02-15 10:08:11] [INFO] Starting test AI1-d6_vs_AI2-d8 (Test #48/64)
+[2025-02-15 10:08:11] [STATE] State saved: TestIndex=47
+[2025-02-15 13:02:00] [INFO] Completed AI1-d6_vs_AI2-d8 | Duration: 00:02:53:49 | Result: White (AI2-d8) | Final score - Black: 27, White: 37
+[2025-02-15 13:02:00] [INFO] --------------------------------------------------
+[2025-02-15 13:02:00] [INFO] Starting test AI1-d7_vs_AI2-d1 (Test #49/64)
+[2025-02-15 13:02:00] [STATE] State saved: TestIndex=48
+[2025-02-15 13:20:29] [INFO] Completed AI1-d7_vs_AI2-d1 | Duration: 00:00:18:29 | Result: White (AI2-d1) | Final score - Black: 30, White: 34
+[2025-02-15 13:20:29] [INFO] --------------------------------------------------
+[2025-02-15 13:20:29] [INFO] Starting test AI1-d7_vs_AI2-d2 (Test #50/64)
+[2025-02-15 13:20:29] [STATE] State saved: TestIndex=49
+[2025-02-15 13:32:56] [INFO] Completed AI1-d7_vs_AI2-d2 | Duration: 00:00:12:26 | Result: White (AI2-d2) | Final score - Black: 16, White: 48
+[2025-02-15 13:32:56] [INFO] --------------------------------------------------
+[2025-02-15 13:32:56] [INFO] Starting test AI1-d7_vs_AI2-d3 (Test #51/64)
+[2025-02-15 13:32:56] [STATE] State saved: TestIndex=50
+[2025-02-15 14:10:54] [INFO] Completed AI1-d7_vs_AI2-d3 | Duration: 00:00:37:57 | Result: Black (AI1-d7) | Final score - Black: 32, White: 31
+[2025-02-15 14:10:54] [INFO] --------------------------------------------------
+[2025-02-15 14:10:54] [INFO] Starting test AI1-d7_vs_AI2-d4 (Test #52/64)
+[2025-02-15 14:10:54] [STATE] State saved: TestIndex=51
+[2025-02-15 14:34:54] [INFO] Completed AI1-d7_vs_AI2-d4 | Duration: 00:00:24:00 | Result: Black (AI1-d7) | Final score - Black: 7, White: 57
+[2025-02-15 14:34:54] [INFO] --------------------------------------------------
+[2025-02-15 14:34:54] [INFO] Starting test AI1-d7_vs_AI2-d5 (Test #53/64)
+[2025-02-15 14:34:54] [STATE] State saved: TestIndex=52
+[2025-02-15 14:59:56] [INFO] Completed AI1-d7_vs_AI2-d5 | Duration: 00:00:25:01 | Result: White (AI2-d5) | Final score - Black: 19, White: 45
+[2025-02-15 14:59:56] [INFO] --------------------------------------------------
+[2025-02-15 14:59:56] [INFO] Starting test AI1-d7_vs_AI2-d6 (Test #54/64)
+[2025-02-15 14:59:56] [STATE] State saved: TestIndex=53
+[2025-02-15 15:35:39] [INFO] Completed AI1-d7_vs_AI2-d6 | Duration: 00:00:35:43 | Result: White (AI2-d6) | Final score - Black: 28, White: 36
+[2025-02-15 15:35:39] [INFO] --------------------------------------------------
+[2025-02-15 15:35:40] [INFO] Starting test AI1-d7_vs_AI2-d7 (Test #55/64)
+[2025-02-15 15:35:40] [STATE] State saved: TestIndex=54
+[2025-02-15 16:14:55] [INFO] Completed AI1-d7_vs_AI2-d7 | Duration: 00:00:39:15 | Result: White (AI2-d7) | Final score - Black: 25, White: 39
+[2025-02-15 16:14:55] [INFO] --------------------------------------------------
+[2025-02-15 16:14:55] [INFO] Starting test AI1-d7_vs_AI2-d8 (Test #56/64)
+[2025-02-15 16:14:55] [STATE] State saved: TestIndex=55
+[2025-02-15 17:39:16] [INFO] Completed AI1-d7_vs_AI2-d8 | Duration: 00:01:24:20 | Result: White (AI2-d8) | Final score - Black: 27, White: 37
+[2025-02-15 17:39:16] [INFO] --------------------------------------------------
+[2025-02-15 17:39:16] [INFO] Starting test AI1-d8_vs_AI2-d1 (Test #57/64)
+[2025-02-15 17:39:16] [STATE] State saved: TestIndex=56
+[2025-02-15 19:22:14] [INFO] Completed AI1-d8_vs_AI2-d1 | Duration: 00:01:42:58 | Result: Black (AI1-d8) | Final score - Black: 46, White: 18
+[2025-02-15 19:22:14] [INFO] --------------------------------------------------
+[2025-02-15 19:22:14] [INFO] Starting test AI1-d8_vs_AI2-d2 (Test #58/64)
+[2025-02-15 19:22:14] [STATE] State saved: TestIndex=57
+[2025-02-15 22:05:13] [INFO] Completed AI1-d8_vs_AI2-d2 | Duration: 00:02:42:59 | Result: Black (AI1-d8) | Final score - Black: 33, White: 31
+[2025-02-15 22:05:13] [INFO] --------------------------------------------------
+[2025-02-15 22:05:13] [INFO] Starting test AI1-d8_vs_AI2-d3 (Test #59/64)
+[2025-02-15 22:05:13] [STATE] State saved: TestIndex=58
+[2025-02-16 00:45:08] [INFO] Completed AI1-d8_vs_AI2-d3 | Duration: 00:02:39:55 | Result: Black (AI1-d8) | Final score - Black: 42, White: 22
+[2025-02-16 00:45:08] [INFO] --------------------------------------------------
+[2025-02-16 00:45:08] [INFO] Starting test AI1-d8_vs_AI2-d4 (Test #60/64)
+[2025-02-16 00:45:08] [STATE] State saved: TestIndex=59
+[2025-02-16 04:00:19] [INFO] Completed AI1-d8_vs_AI2-d4 | Duration: 00:03:15:10 | Result: Black (AI1-d8) | Final score - Black: 59, White: 5
+[2025-02-16 04:00:19] [INFO] --------------------------------------------------
+[2025-02-16 04:00:19] [INFO] Starting test AI1-d8_vs_AI2-d5 (Test #61/64)
+[2025-02-16 04:00:19] [STATE] State saved: TestIndex=60
+[2025-02-16 05:30:27] [INFO] Completed AI1-d8_vs_AI2-d5 | Duration: 00:01:30:08 | Result: Black (AI1-d8) | Final score - Black: 44, White: 20
+[2025-02-16 05:30:28] [INFO] --------------------------------------------------
+[2025-02-16 05:30:28] [INFO] Starting test AI1-d8_vs_AI2-d6 (Test #62/64)
+[2025-02-16 05:30:28] [STATE] State saved: TestIndex=61
+[2025-02-16 08:09:24] [INFO] Completed AI1-d8_vs_AI2-d6 | Duration: 00:02:38:56 | Result: Black (AI1-d8) | Final score - Black: 39, White: 25
+[2025-02-16 08:09:24] [INFO] --------------------------------------------------
+[2025-02-16 08:09:24] [INFO] Starting test AI1-d8_vs_AI2-d7 (Test #63/64)
+[2025-02-16 08:09:24] [STATE] State saved: TestIndex=62
+[2025-02-16 11:26:25] [INFO] Completed AI1-d8_vs_AI2-d7 | Duration: 00:03:17:00 | Result: Black (AI1-d8) | Final score - Black: 43, White: 21
+[2025-02-16 11:26:25] [INFO] --------------------------------------------------
+[2025-02-16 11:26:25] [INFO] Starting test AI1-d8_vs_AI2-d8 (Test #64/64)
+[2025-02-16 11:26:25] [STATE] State saved: TestIndex=63
+[2025-02-16 12:48:12] [INFO] Completed AI1-d8_vs_AI2-d8 | Duration: 00:01:21:47 | Result: Black (AI1-d8) | Final score - Black: 53, White: 11
+[2025-02-16 12:48:12] [INFO] --------------------------------------------------
+[2025-02-16 12:48:13] [SUCCESS] All tests completed successfully
+
+============================================
+Benchmark Complete
+Total Matches: 64
+Total Execution Time: 01:17:30:01
+End Time: 2025-02-16 12:48:13
+============================================
