@@ -1,5 +1,5 @@
 from config import config
-from Code.Game.OthelloRLAgent_2 import EnhancedTrainingManager
+from OthelloRLAgent_2 import EnhancedTrainingManager
 
 def main():
     # Initialize training

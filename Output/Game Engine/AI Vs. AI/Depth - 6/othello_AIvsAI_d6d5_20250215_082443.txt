@@ -1,0 +1,1304 @@
+
+1 . . . . . . . .
+2 . . . . . . . .
+3 . . . . . . . .
+4 . . . O X . . .
+5 . . . X O . . .
+6 . . . . . . . .
+7 . . . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 2, White (O): 2
+
+AI X thinking...
+Depth 1  : Value =     +889.00 | Nodes =       4 | Time =      0.0040s | NPS =     999
+Depth 2  : Value =     +856.00 | Nodes =      12 | Time =      0.0150s | NPS =     799
+Depth 3  : Value =     +829.00 | Nodes =      75 | Time =      0.1035s | NPS =     724
+Depth 4  : Value =     +801.00 | Nodes =      80 | Time =      0.1211s | NPS =     661
+Depth 5  : Value =     +774.00 | Nodes =     205 | Time =      0.3026s | NPS =     677
+Depth 6  : Value =     +741.00 | Nodes =     307 | Time =      0.4937s | NPS =     622
+AI plays: e6
+
+1 . . . . . . . .
+2 . . . . . . . .
+3 . . . . . . . .
+4 . . . O X . . .
+5 . . . X X . . .
+6 . . . . X . . .
+7 . . . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 4, White (O): 1
+Last move: X played e6, flipping 1 disc(s) at: [e5]
+
+AI O thinking...
+Depth 1  : Value =     +866.00 | Nodes =       3 | Time =      0.0030s | NPS =     999
+Depth 2  : Value =     +819.00 | Nodes =      19 | Time =      0.0230s | NPS =     826
+Depth 3  : Value =     +801.00 | Nodes =      46 | Time =      0.0645s | NPS =     713
+Depth 4  : Value =     +774.00 | Nodes =      93 | Time =      0.1415s | NPS =     657
+Depth 5  : Value =     +741.00 | Nodes =     133 | Time =      0.2071s | NPS =     642
+AI plays: f6
+
+1 . . . . . . . .
+2 . . . . . . . .
+3 . . . . . . . .
+4 . . . O X . . .
+5 . . . X O . . .
+6 . . . . X O . .
+7 . . . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 3, White (O): 3
+Last move: O played f6, flipping 1 disc(s) at: [e5]
+
+AI X thinking...
+Depth 1  : Value =     +839.00 | Nodes =       4 | Time =      0.0040s | NPS =     999
+Depth 2  : Value =     +836.00 | Nodes =      13 | Time =      0.0190s | NPS =     684
+Depth 3  : Value =     +789.00 | Nodes =      49 | Time =      0.0765s | NPS =     640
+Depth 4  : Value =     +736.00 | Nodes =     125 | Time =      0.1891s | NPS =     661
+Depth 5  : Value =     +719.00 | Nodes =     359 | Time =      0.5852s | NPS =     613
+Depth 6  : Value =     +360.00 | Nodes =       8 | Time =      0.0060s | NPS =    1333
+AI plays: d3
+
+1 . . . . . . . .
+2 . . . . . . . .
+3 . . . X . . . .
+4 . . . X X . . .
+5 . . . X O . . .
+6 . . . . X O . .
+7 . . . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 5, White (O): 2
+Last move: X played d3, flipping 1 disc(s) at: [d4]
+
+AI O thinking...
+Depth 1  : Value =     +806.00 | Nodes =       5 | Time =      0.0050s | NPS =     999
+Depth 2  : Value =     +769.00 | Nodes =      23 | Time =      0.0290s | NPS =     793
+Depth 3  : Value =     +746.00 | Nodes =      99 | Time =      0.1491s | NPS =     664
+Depth 4  : Value =     +719.00 | Nodes =     256 | Time =      0.4142s | NPS =     618
+Depth 5  : Value =     +686.00 | Nodes =     637 | Time =      1.0729s | NPS =     594
+AI plays: e3
+
+1 . . . . . . . .
+2 . . . . . . . .
+3 . . . X O . . .
+4 . . . X O . . .
+5 . . . X O . . .
+6 . . . . X O . .
+7 . . . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 4, White (O): 4
+Last move: O played e3, flipping 1 disc(s) at: [e4]
+
+AI X thinking...
+Depth 1  : Value =     +784.00 | Nodes =       7 | Time =      0.0070s | NPS =     997
+Depth 2  : Value =     +741.00 | Nodes =      21 | Time =      0.0280s | NPS =     750
+Depth 3  : Value =     +734.00 | Nodes =      77 | Time =      0.1236s | NPS =     623
+Depth 4  : Value =     +691.00 | Nodes =     279 | Time =      0.4537s | NPS =     615
+Depth 5  : Value =     +669.00 | Nodes =    1138 | Time =      2.0027s | NPS =     568
+Depth 6  : Value =     +646.00 | Nodes =    1891 | Time =      5.3708s | NPS =     352
+AI plays: f4
+
+1 . . . . . . . .
+2 . . . . . . . .
+3 . . . X O . . .
+4 . . . X X X . .
+5 . . . X O . . .
+6 . . . . X O . .
+7 . . . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 6, White (O): 3
+Last move: X played f4, flipping 1 disc(s) at: [e4]
+
+AI O thinking...
+Depth 1  : Value =     +776.00 | Nodes =       6 | Time =      0.0085s | NPS =     706
+Depth 2  : Value =     +719.00 | Nodes =      28 | Time =      0.0610s | NPS =     459
+Depth 3  : Value =     +706.00 | Nodes =     134 | Time =      0.3381s | NPS =     396
+Depth 4  : Value =     +654.00 | Nodes =     386 | Time =      1.0128s | NPS =     381
+Depth 5  : Value =     +646.00 | Nodes =     526 | Time =      1.5044s | NPS =     350
+AI plays: g5
+
+1 . . . . . . . .
+2 . . . . . . . .
+3 . . . X O . . .
+4 . . . X X O . .
+5 . . . X O . O .
+6 . . . . X O . .
+7 . . . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 5, White (O): 5
+Last move: O played g5, flipping 1 disc(s) at: [f4]
+
+AI X thinking...
+Depth 1  : Value =     +739.00 | Nodes =       7 | Time =      0.0113s | NPS =     621
+Depth 2  : Value =     +706.00 | Nodes =      36 | Time =      0.0929s | NPS =     388
+Depth 3  : Value =     +679.00 | Nodes =     147 | Time =      0.4213s | NPS =     349
+Depth 4  : Value =     +661.00 | Nodes =     323 | Time =      0.8328s | NPS =     388
+Depth 5  : Value =     +619.00 | Nodes =    1081 | Time =      3.4631s | NPS =     312
+Depth 6  : Value =     +601.00 | Nodes =    2085 | Time =      6.0239s | NPS =     346
+AI plays: g6
+
+1 . . . . . . . .
+2 . . . . . . . .
+3 . . . X O . . .
+4 . . . X X O . .
+5 . . . X O . O .
+6 . . . . X X X .
+7 . . . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 7, White (O): 4
+Last move: X played g6, flipping 1 disc(s) at: [f6]
+
+AI O thinking...
+Depth 1  : Value =     +711.00 | Nodes =       5 | Time =      0.0080s | NPS =     625
+Depth 2  : Value =     +654.00 | Nodes =      30 | Time =      0.0685s | NPS =     438
+Depth 3  : Value =     +646.00 | Nodes =      84 | Time =      0.2117s | NPS =     397
+Depth 4  : Value =     +604.00 | Nodes =     545 | Time =      1.4200s | NPS =     384
+Depth 5  : Value =     +596.00 | Nodes =     832 | Time =      2.3037s | NPS =     361
+AI plays: c5
+
+1 . . . . . . . .
+2 . . . . . . . .
+3 . . . X O . . .
+4 . . . O X O . .
+5 . . O O O . O .
+6 . . . . X X X .
+7 . . . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 5, White (O): 7
+Last move: O played c5, flipping 2 disc(s) at: [d5, d4]
+
+AI X thinking...
+Depth 1  : Value =     +669.00 | Nodes =       8 | Time =      0.0140s | NPS =     571
+Depth 2  : Value =     +651.00 | Nodes =      50 | Time =      0.1135s | NPS =     440
+Depth 3  : Value =     +614.00 | Nodes =     196 | Time =      0.5141s | NPS =     381
+Depth 4  : Value =     +611.00 | Nodes =     677 | Time =      1.8524s | NPS =     365
+Depth 5  : Value =     +569.00 | Nodes =    1218 | Time =      3.7831s | NPS =     322
+Depth 6  : Value =     +551.00 | Nodes =    3333 | Time =     11.0163s | NPS =     303
+AI plays: c6
+
+1 . . . . . . . .
+2 . . . . . . . .
+3 . . . X O . . .
+4 . . . O X O . .
+5 . . O X O . O .
+6 . . X . X X X .
+7 . . . . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 7, White (O): 6
+Last move: X played c6, flipping 1 disc(s) at: [d5]
+
+AI O thinking...
+Depth 1  : Value =     +651.00 | Nodes =       6 | Time =      0.0110s | NPS =     546
+Depth 2  : Value =     +589.00 | Nodes =      32 | Time =      0.1327s | NPS =     241
+Depth 3  : Value =     +596.00 | Nodes =      83 | Time =      0.3830s | NPS =     217
+Depth 4  : Value =     +559.00 | Nodes =     623 | Time =      1.7840s | NPS =     349
+Depth 5  : Value =     +541.00 | Nodes =     749 | Time =      2.6472s | NPS =     283
+AI plays: c7
+
+1 . . . . . . . .
+2 . . . . . . . .
+3 . . . X O . . .
+4 . . . O X O . .
+5 . . O X O . O .
+6 . . O . X X X .
+7 . . O . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 6, White (O): 8
+Last move: O played c7, flipping 1 disc(s) at: [c6]
+
+AI X thinking...
+Depth 1  : Value =     +604.00 | Nodes =       9 | Time =      0.0165s | NPS =     546
+Depth 2  : Value =     +586.00 | Nodes =      29 | Time =      0.1298s | NPS =     223
+Depth 3  : Value =     +564.00 | Nodes =     188 | Time =      0.6867s | NPS =     274
+Depth 4  : Value =     +541.00 | Nodes =     640 | Time =      1.9513s | NPS =     328
+Depth 5  : Value =     +504.00 | Nodes =    3520 | Time =     11.6429s | NPS =     302
+Depth 6  : Value =     +501.00 | Nodes =    4068 | Time =     16.3093s | NPS =     249
+AI plays: h4
+
+1 . . . . . . . .
+2 . . . . . . . .
+3 . . . X O . . .
+4 . . . O X O . X
+5 . . O X O . X .
+6 . . O . X X X .
+7 . . O . . . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 8, White (O): 7
+Last move: X played h4, flipping 1 disc(s) at: [g5]
+
+AI O thinking...
+Depth 1  : Value =     +606.00 | Nodes =       7 | Time =      0.0120s | NPS =     583
+Depth 2  : Value =     +544.00 | Nodes =      49 | Time =      0.1378s | NPS =     355
+Depth 3  : Value =     +561.00 | Nodes =     144 | Time =      0.4332s | NPS =     332
+Depth 4  : Value =     +494.00 | Nodes =     751 | Time =      2.3229s | NPS =     323
+Depth 5  : Value =     +496.00 | Nodes =     977 | Time =      3.0929s | NPS =     316
+AI plays: e7
+
+1 . . . . . . . .
+2 . . . . . . . .
+3 . . . X O . . .
+4 . . . O X O . X
+5 . . O X O . X .
+6 . . O . O X X .
+7 . . O . O . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 7, White (O): 9
+Last move: O played e7, flipping 1 disc(s) at: [e6]
+
+AI X thinking...
+Depth 1  : Value =     +549.00 | Nodes =      13 | Time =      0.0360s | NPS =     361
+Depth 2  : Value =     +571.00 | Nodes =      45 | Time =      0.1185s | NPS =     380
+Depth 3  : Value =     +504.00 | Nodes =     395 | Time =      1.6448s | NPS =     240
+Depth 4  : Value =     +516.00 | Nodes =     723 | Time =      3.9576s | NPS =     183
+Depth 5  : Value =     +464.00 | Nodes =    4325 | Time =     22.0665s | NPS =     196
+Depth 6  : Value =     +279.30 | Nodes =    2638 | Time =     11.3584s | NPS =     232
+AI plays: b7
+
+1 . . . . . . . .
+2 . . . . . . . .
+3 . . . X O . . .
+4 . . . O X O . X
+5 . . O X O . X .
+6 . . X . O X X .
+7 . X O . O . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 9, White (O): 8
+Last move: X played b7, flipping 1 disc(s) at: [c6]
+
+AI O thinking...
+Depth 1  : Value =     +561.00 | Nodes =       7 | Time =      0.0135s | NPS =     518
+Depth 2  : Value =     +484.00 | Nodes =      53 | Time =      0.1779s | NPS =     298
+Depth 3  : Value =     +501.00 | Nodes =     127 | Time =      0.5146s | NPS =     247
+Depth 4  : Value =     +454.00 | Nodes =    1162 | Time =      4.8432s | NPS =     240
+Depth 5  : Value =     +276.20 | Nodes =    2543 | Time =     10.8835s | NPS =     234
+AI plays: h6
+
+1 . . . . . . . .
+2 . . . . . . . .
+3 . . . X O . . .
+4 . . . O X O . X
+5 . . O X O . O .
+6 . . X . O O O O
+7 . X O . O . . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 6, White (O): 12
+Last move: O played h6, flipping 3 disc(s) at: [g6, f6, g5]
+
+AI X thinking...
+Depth 1  : Value =     +494.00 | Nodes =      11 | Time =      0.0242s | NPS =     454
+Depth 2  : Value =     +541.00 | Nodes =      44 | Time =      0.1546s | NPS =     285
+Depth 3  : Value =     +454.00 | Nodes =     292 | Time =      0.9141s | NPS =     319
+Depth 4  : Value =     +302.90 | Nodes =     857 | Time =      2.9107s | NPS =     294
+Depth 5  : Value =     +263.35 | Nodes =    5226 | Time =     19.4459s | NPS =     269
+Depth 6  : Value =     +263.80 | Nodes =    2923 | Time =     12.3041s | NPS =     238
+AI plays: f7
+
+1 . . . . . . . .
+2 . . . . . . . .
+3 . . . X O . . .
+4 . . . O X O . X
+5 . . O X O . O .
+6 . . X . X O O O
+7 . X O . O X . .
+8 . . . . . . . .
+  a b c d e f g h
+
+Current score - Black (X): 8, White (O): 11
+Last move: X played f7, flipping 1 disc(s) at: [e6]
+
+AI O thinking...
+Depth 1  : Value =     +526.00 | Nodes =       7 | Time =      0.0140s | NPS =     500
+Depth 2  : Value =     +469.00 | Nodes =      36 | Time =      0.1065s | NPS =     338
+Depth 3  : Value =     +279.20 | Nodes =     157 | Time =      0.5000s | NPS =     314
+Depth 4  : Value =     +251.65 | Nodes =     866 | Time =      2.9681s | NPS =     292
+Depth 5  : Value =     +255.10 | Nodes =    1357 | Time =      5.2347s | NPS =     259
+AI plays: f8
+
+1 . . . . . . . .
+2 . . . . . . . .
+3 . . . X O . . .
+4 . . . O X O . X
+5 . . O X O . O .
+6 . . X . X O O O
+7 . X O . O O . .
+8 . . . . . O . .
+  a b c d e f g h
+
+Current score - Black (X): 7, White (O): 13
+Last move: O played f8, flipping 1 disc(s) at: [f7]
+
+AI X thinking...
+Depth 1  : Value =     +464.00 | Nodes =      11 | Time =      0.0210s | NPS =     524
+Depth 2  : Value =     +300.00 | Nodes =      27 | Time =      0.0765s | NPS =     353
+Depth 3  : Value =     +260.15 | Nodes =     279 | Time =      1.2106s | NPS =     230
+Depth 4  : Value =     +282.00 | Nodes =     955 | Time =      4.4871s | NPS =     213
+Depth 5  : Value =     +245.35 | Nodes =    3744 | Time =     16.3557s | NPS =     229
+Depth 6  : Value =     +258.30 | Nodes =    4277 | Time =     19.8585s | NPS =     215
+AI plays: g8
+
+1 . . . . . . . .
+2 . . . . . . . .
+3 . . . X O . . .
+4 . . . O X O . X
+5 . . O X O . O .
+6 . . X . X O O O
+7 . X O . O X . .
+8 . . . . . O X .
+  a b c d e f g h
+
+Current score - Black (X): 9, White (O): 12
+Last move: X played g8, flipping 1 disc(s) at: [f7]
+
+AI O thinking...
+Depth 1  : Value =     +294.20 | Nodes =       7 | Time =      0.0140s | NPS =     500
+Depth 2  : Value =     +272.65 | Nodes =      41 | Time =      0.1466s | NPS =     280
+Depth 3  : Value =     +270.20 | Nodes =     135 | Time =      0.5593s | NPS =     241
+Depth 4  : Value =     +272.55 | Nodes =    1151 | Time =      5.3940s | NPS =     213
+Depth 5  : Value =     +225.10 | Nodes =    1155 | Time =      5.6725s | NPS =     204
+AI plays: c3
+
+1 . . . . . . . .
+2 . . . . . . . .
+3 . . O O O . . .
+4 . . . O X O . X
+5 . . O X O . O .
+6 . . X . X O O O
+7 . X O . O X . .
+8 . . . . . O X .
+  a b c d e f g h
+
+Current score - Black (X): 8, White (O): 14
+Last move: O played c3, flipping 1 disc(s) at: [d3]
+
+AI X thinking...
+Depth 1  : Value =     +248.65 | Nodes =      12 | Time =      0.0320s | NPS =     375
+Depth 2  : Value =     +290.20 | Nodes =      28 | Time =      0.1135s | NPS =     247
+Depth 3  : Value =     +245.55 | Nodes =     262 | Time =      1.1874s | NPS =     221
+Depth 4  : Value =     +267.20 | Nodes =     614 | Time =      2.8956s | NPS =     212
+Depth 5  : Value =     +227.45 | Nodes =    7160 | Time =     32.9669s | NPS =     217
+Depth 6  : Value =     +239.60 | Nodes =    7059 | Time =     32.8375s | NPS =     215
+AI plays: d8
+
+1 . . . . . . . .
+2 . . . . . . . .
+3 . . O O O . . .
+4 . . . O X O . X
+5 . . O X O . X .
+6 . . X . X X O O
+7 . X O . X X . .
+8 . . . X . O X .
+  a b c d e f g h
+
+Current score - Black (X): 12, White (O): 11
+Last move: X played d8, flipping 3 disc(s) at: [e7, f6, g5]
+
+AI O thinking...
+Depth 1  : Value =     +273.40 | Nodes =       7 | Time =      0.0140s | NPS =     500
+Depth 2  : Value =     +238.25 | Nodes =      48 | Time =      0.1631s | NPS =     294
+Depth 3  : Value =     +240.20 | Nodes =     141 | Time =      0.5908s | NPS =     239
+Depth 4  : Value =     +243.45 | Nodes =     931 | Time =      4.5962s | NPS =     203
+Depth 5  : Value =     +213.00 | Nodes =    1924 | Time =     10.0149s | NPS =     192
+AI plays: d6
+
+1 . . . . . . . .
+2 . . . . . . . .
+3 . . O O O . . .
+4 . . . O X O . X
+5 . . O O O . X .
+6 . . X O O O O O
+7 . X O . O X . .
+8 . . . X . O X .
+  a b c d e f g h
+
+Current score - Black (X): 8, White (O): 16
+Last move: O played d6, flipping 4 disc(s) at: [e6, f6, d5, e7]
+
+AI X thinking...
+Depth 1  : Value =     +251.65 | Nodes =      12 | Time =      0.0480s | NPS =     250
+Depth 2  : Value =     +287.40 | Nodes =      31 | Time =      0.1664s | NPS =     186
+Depth 3  : Value =     +230.65 | Nodes =     467 | Time =      2.9437s | NPS =     159
+Depth 4  : Value =     +246.10 | Nodes =     357 | Time =      1.8956s | NPS =     188
+Depth 5  : Value =     +209.25 | Nodes =    6158 | Time =     33.4170s | NPS =     184
+Depth 6  : Value =     +206.90 | Nodes =    6429 | Time =     27.5319s | NPS =     234
+AI plays: c8
+
+1 . . . . . . . .
+2 . . . . . . . .
+3 . . O O O . . .
+4 . . . O X O . X
+5 . . O O O . X .
+6 . . X O O O O O
+7 . X X . O X . .
+8 . . X X . O X .
+  a b c d e f g h
+
+Current score - Black (X): 10, White (O): 15
+Last move: X played c8, flipping 1 disc(s) at: [c7]
+
+AI O thinking...
+Depth 1  : Value =     +261.00 | Nodes =       9 | Time =      0.0185s | NPS =     486
+Depth 2  : Value =     +230.55 | Nodes =      74 | Time =      0.2350s | NPS =     315
+Depth 3  : Value =     +230.80 | Nodes =     255 | Time =      0.9275s | NPS =     275
+Depth 4  : Value =     +246.45 | Nodes =    1240 | Time =      5.0167s | NPS =     247
+Depth 5  : Value =     +206.90 | Nodes =    3494 | Time =     16.2018s | NPS =     216
+AI plays: b8
+
+1 . . . . . . . .
+2 . . . . . . . .
+3 . . O O O . . .
+4 . . . O X O . X
+5 . . O O O . X .
+6 . . X O O O O O
+7 . X O . O X . .
+8 . O X X . O X .
+  a b c d e f g h
+
+Current score - Black (X): 9, White (O): 17
+Last move: O played b8, flipping 1 disc(s) at: [c7]
+
+AI X thinking...
+Depth 1  : Value =     +242.65 | Nodes =      12 | Time =      0.0405s | NPS =     296
+Depth 2  : Value =     +280.10 | Nodes =      51 | Time =      0.2430s | NPS =     210
+Depth 3  : Value =     +218.75 | Nodes =     274 | Time =      1.5891s | NPS =     172
+Depth 4  : Value =     +274.50 | Nodes =     666 | Time =      3.4543s | NPS =     193
+Depth 5  : Value =     +194.25 | Nodes =    5062 | Time =     28.6765s | NPS =     177
+Depth 6  : Value =     +231.00 | Nodes =    5768 | Time =     32.6112s | NPS =     177
+AI plays: g7
+
+1 . . . . . . . .
+2 . . . . . . . .
+3 . . O O O . . .
+4 . . . O X O . X
+5 . . O O O . X .
+6 . . X O O O X O
+7 . X O . O X X .
+8 . O X X . O X .
+  a b c d e f g h
+
+Current score - Black (X): 11, White (O): 16
+Last move: X played g7, flipping 1 disc(s) at: [g6]
+
+AI O thinking...
+Depth 1  : Value =     +255.00 | Nodes =       8 | Time =      0.0180s | NPS =     444
+Depth 2  : Value =     +218.65 | Nodes =      58 | Time =      0.1920s | NPS =     302
+Depth 3  : Value =     +221.90 | Nodes =     259 | Time =      1.0457s | NPS =     248
+Depth 4  : Value =     +226.55 | Nodes =    1160 | Time =      5.0437s | NPS =     230
+Depth 5  : Value =     +197.90 | Nodes =    2057 | Time =      9.0516s | NPS =     227
+AI plays: h8
+
+1 . . . . . . . .
+2 . . . . . . . .
+3 . . O O O . . .
+4 . . . O X O . X
+5 . . O O O . X .
+6 . . X O O O X O
+7 . X O . O X O .
+8 . O X X . O O O
+  a b c d e f g h
+
+Current score - Black (X): 9, White (O): 19
+Last move: O played h8, flipping 2 disc(s) at: [g8, g7]
+
+AI X thinking...
+Depth 1  : Value =     +256.75 | Nodes =      11 | Time =      0.0250s | NPS =     440
+Depth 2  : Value =     +279.90 | Nodes =      34 | Time =      0.1135s | NPS =     300
+Depth 3  : Value =     +229.45 | Nodes =     396 | Time =      1.5297s | NPS =     259
+Depth 4  : Value =     +221.90 | Nodes =     835 | Time =      3.9955s | NPS =     209
+Depth 5  : Value =     +202.45 | Nodes =    2176 | Time =     10.5813s | NPS =     206
+Depth 6  : Value =     +194.50 | Nodes =    1380 | Time =      6.2523s | NPS =     221
+AI plays: g4
+
+1 . . . . . . . .
+2 . . . . . . . .
+3 . . O O O . . .
+4 . . . O X X X X
+5 . . O O O . X .
+6 . . X O O O X O
+7 . X O . O X O .
+8 . O X X . O O O
+  a b c d e f g h
+
+Current score - Black (X): 11, White (O): 18
+Last move: X played g4, flipping 1 disc(s) at: [f4]
+
+AI O thinking...
+Depth 1  : Value =     +236.90 | Nodes =       7 | Time =      0.0165s | NPS =     424
+Depth 2  : Value =     +269.95 | Nodes =      43 | Time =      0.1515s | NPS =     284
+Depth 3  : Value =     +203.70 | Nodes =     128 | Time =      0.6074s | NPS =     211
+Depth 4  : Value =     +266.05 | Nodes =     593 | Time =      2.9035s | NPS =     204
+Depth 5  : Value =     +173.60 | Nodes =    1223 | Time =      5.1327s | NPS =     238
+AI plays: g3
+
+1 . . . . . . . .
+2 . . . . . . . .
+3 . . O O O . O .
+4 . . . O X O O X
+5 . . O O O . O .
+6 . . X O O O O O
+7 . X O . O X O .
+8 . O X X . O O O
+  a b c d e f g h
+
+Current score - Black (X): 7, White (O): 23
+Last move: O played g3, flipping 4 disc(s) at: [g4, g5, g6, f4]
+
+AI X thinking...
+Depth 1  : Value =     +218.15 | Nodes =      11 | Time =      0.0260s | NPS =     423
+Depth 2  : Value =     +255.70 | Nodes =      48 | Time =      0.1545s | NPS =     311
+Depth 3  : Value =     +194.15 | Nodes =     241 | Time =      1.3983s | NPS =     172
+Depth 4  : Value =     +227.80 | Nodes =     347 | Time =      1.4567s | NPS =     238
+Depth 5  : Value =     +185.05 | Nodes =    3156 | Time =     18.5827s | NPS =     170
+Depth 6  : Value =     +119.40 | Nodes =    2353 | Time =     13.1829s | NPS =     178
+AI plays: e2
+
+1 . . . . . . . .
+2 . . . . X . . .
+3 . . O O X . O .
+4 . . . O X O O X
+5 . . O O O . O .
+6 . . X O O O O O
+7 . X O . O X O .
+8 . O X X . O O O
+  a b c d e f g h
+
+Current score - Black (X): 9, White (O): 22
+Last move: X played e2, flipping 1 disc(s) at: [e3]
+
+AI O thinking...
+Depth 1  : Value =     +197.60 | Nodes =      10 | Time =      0.0360s | NPS =     278
+Depth 2  : Value =     +246.25 | Nodes =      26 | Time =      0.0965s | NPS =     269
+Depth 3  : Value =     +173.60 | Nodes =     163 | Time =      0.8367s | NPS =     195
+Depth 4  : Value =     +242.25 | Nodes =     480 | Time =      2.9156s | NPS =     165
+Depth 5  : Value =     +144.00 | Nodes =    2188 | Time =     13.4715s | NPS =     162
+AI plays: f3
+
+1 . . . . . . . .
+2 . . . . X . . .
+3 . . O O O O O .
+4 . . . O O O O X
+5 . . O O O . O .
+6 . . X O O O O O
+7 . X O . O X O .
+8 . O X X . O O O
+  a b c d e f g h
+
+Current score - Black (X): 7, White (O): 25
+Last move: O played f3, flipping 2 disc(s) at: [e3, e4]
+
+AI X thinking...
+Depth 1  : Value =     +203.05 | Nodes =      10 | Time =      0.0452s | NPS =     221
+Depth 2  : Value =     +228.60 | Nodes =      44 | Time =      0.2997s | NPS =     147
+Depth 3  : Value =     +182.15 | Nodes =     319 | Time =      2.4900s | NPS =     128
+Depth 4  : Value =     +216.50 | Nodes =     180 | Time =      1.4091s | NPS =     128
+Depth 5  : Value =     +160.95 | Nodes =    7654 | Time =     43.9393s | NPS =     174
+Depth 6  : Value =     +188.70 | Nodes =    4316 | Time =     21.4519s | NPS =     201
+AI plays: e8
+
+1 . . . . . . . .
+2 . . . . X . . .
+3 . . O O X O O .
+4 . . . O X O O X
+5 . . O O X . O .
+6 . . X O X O O O
+7 . X O . X X O .
+8 . O X X X O O O
+  a b c d e f g h
+
+Current score - Black (X): 13, White (O): 20
+Last move: X played e8, flipping 5 disc(s) at: [e7, e6, e5, e4, e3]
+
+AI O thinking...
+Depth 1  : Value =     +203.90 | Nodes =       9 | Time =      0.0220s | NPS =     409
+Depth 2  : Value =     +161.55 | Nodes =      60 | Time =      0.2341s | NPS =     256
+Depth 3  : Value =     +168.00 | Nodes =     270 | Time =      1.4604s | NPS =     185
+Depth 4  : Value =     +152.35 | Nodes =    1748 | Time =     10.6416s | NPS =     164
+Depth 5  : Value =     +137.70 | Nodes =    1482 | Time =     10.0613s | NPS =     147
+AI plays: b6
+
+1 . . . . . . . .
+2 . . . . X . . .
+3 . . O O X O O .
+4 . . . O X O O X
+5 . . O O X . O .
+6 . O O O X O O O
+7 . O O . X X O .
+8 . O X X X O O O
+  a b c d e f g h
+
+Current score - Black (X): 11, White (O): 23
+Last move: O played b6, flipping 2 disc(s) at: [c6, b7]
+
+AI X thinking...
+Depth 1  : Value =     +152.85 | Nodes =      17 | Time =      0.0491s | NPS =     346
+Depth 2  : Value =     +220.20 | Nodes =      49 | Time =      0.2269s | NPS =     216
+Depth 3  : Value =     +140.55 | Nodes =     652 | Time =      3.9728s | NPS =     164
+Depth 4  : Value =     +211.00 | Nodes =     205 | Time =      1.3123s | NPS =     156
+Depth 5  : Value =     +119.65 | Nodes =   14209 | Time =     90.6285s | NPS =     157
+Depth 6  : Value =     +180.70 | Nodes =    1296 | Time =      7.0422s | NPS =     184
+AI plays: g2
+
+1 . . . . . . . .
+2 . . . . X . X .
+3 . . O O X X O .
+4 . . . O X O O X
+5 . . O O X . O .
+6 . O O O X O O O
+7 . O O . X X O .
+8 . O X X X O O O
+  a b c d e f g h
+
+Current score - Black (X): 13, White (O): 22
+Last move: X played g2, flipping 1 disc(s) at: [f3]
+
+AI O thinking...
+Depth 1  : Value =     +173.90 | Nodes =       8 | Time =      0.0380s | NPS =     211
+Depth 2  : Value =     +131.95 | Nodes =      77 | Time =      0.3772s | NPS =     204
+Depth 3  : Value =     +141.00 | Nodes =     212 | Time =      0.9617s | NPS =     220
+Depth 4  : Value =     +122.75 | Nodes =    1044 | Time =      5.2680s | NPS =     198
+Depth 5  : Value =     +113.50 | Nodes =    3585 | Time =     20.4048s | NPS =     176
+AI plays: d7
+
+1 . . . . . . . .
+2 . . . . X . X .
+3 . . O O X X O .
+4 . . . O X O O X
+5 . . O O X . O .
+6 . O O O X O O O
+7 . O O O O O O .
+8 . O X X X O O O
+  a b c d e f g h
+
+Current score - Black (X): 11, White (O): 25
+Last move: O played d7, flipping 2 disc(s) at: [e7, f7]
+
+AI X thinking...
+Depth 1  : Value =     +146.85 | Nodes =      15 | Time =      0.0585s | NPS =     256
+Depth 2  : Value =     +184.00 | Nodes =      47 | Time =      0.2612s | NPS =     180
+Depth 3  : Value =     +129.15 | Nodes =     652 | Time =      3.4723s | NPS =     188
+Depth 4  : Value =     +180.80 | Nodes =     354 | Time =      1.5852s | NPS =     223
+Depth 5  : Value =     +107.95 | Nodes =    9203 | Time =     61.6964s | NPS =     149
+Depth 6  : Value =     +161.50 | Nodes =    3783 | Time =     19.7612s | NPS =     191
+AI plays: f2
+
+1 . . . . . . . .
+2 . . . . X X X .
+3 . . O O X X X .
+4 . . . O X O O X
+5 . . O O X . O .
+6 . O O O X O O O
+7 . O O O O O O .
+8 . O X X X O O O
+  a b c d e f g h
+
+Current score - Black (X): 13, White (O): 24
+Last move: X played f2, flipping 1 disc(s) at: [g3]
+
+AI O thinking...
+Depth 1  : Value =     +164.50 | Nodes =       9 | Time =      0.0426s | NPS =     211
+Depth 2  : Value =     +126.15 | Nodes =      83 | Time =      0.4014s | NPS =     207
+Depth 3  : Value =     +131.60 | Nodes =     215 | Time =      1.1592s | NPS =     185
+Depth 4  : Value =     +111.35 | Nodes =    1150 | Time =      5.9085s | NPS =     195
+Depth 5  : Value =     +107.50 | Nodes =    2621 | Time =     16.2467s | NPS =     161
+AI plays: h2
+
+1 . . . . . . . .
+2 . . . . X X X O
+3 . . O O X X O .
+4 . . . O X O O X
+5 . . O O X . O .
+6 . O O O X O O O
+7 . O O O O O O .
+8 . O X X X O O O
+  a b c d e f g h
+
+Current score - Black (X): 12, White (O): 26
+Last move: O played h2, flipping 1 disc(s) at: [g3]
+
+AI X thinking...
+Depth 1  : Value =     +131.85 | Nodes =      13 | Time =      0.0440s | NPS =     295
+Depth 2  : Value =     +175.10 | Nodes =      43 | Time =      0.2427s | NPS =     177
+Depth 3  : Value =     +101.85 | Nodes =     486 | Time =      3.3981s | NPS =     143
+Depth 4  : Value =     +165.70 | Nodes =     102 | Time =      0.6977s | NPS =     146
+Depth 5  : Value =      +95.65 | Nodes =    5412 | Time =     40.4731s | NPS =     134
+Depth 6  : Value =     +159.80 | Nodes =    5853 | Time =     37.4365s | NPS =     156
+AI plays: f5
+
+1 . . . . . . . .
+2 . . . . X X X O
+3 . . O O X X O .
+4 . . . O X X O X
+5 . . O O X X O .
+6 . O O O X O O O
+7 . O O O O O O .
+8 . O X X X O O O
+  a b c d e f g h
+
+Current score - Black (X): 14, White (O): 25
+Last move: X played f5, flipping 1 disc(s) at: [f4]
+
+AI O thinking...
+Depth 1  : Value =     +164.40 | Nodes =       6 | Time =      0.0166s | NPS =     362
+Depth 2  : Value =     +111.15 | Nodes =      80 | Time =      0.3905s | NPS =     205
+Depth 3  : Value =     +128.20 | Nodes =     114 | Time =      0.5656s | NPS =     202
+Depth 4  : Value =      +88.25 | Nodes =    1017 | Time =      5.7315s | NPS =     177
+Depth 5  : Value =     +104.40 | Nodes =     762 | Time =      4.3504s | NPS =     175
+AI plays: f1
+
+1 . . . . . O . .
+2 . . . . O O X O
+3 . . O O X O O .
+4 . . . O X O O X
+5 . . O O X O O .
+6 . O O O X O O O
+7 . O O O O O O .
+8 . O X X X O O O
+  a b c d e f g h
+
+Current score - Black (X): 9, White (O): 31
+Last move: O played f1, flipping 5 disc(s) at: [f2, f3, f4, f5, e2]
+
+AI X thinking...
+Depth 1  : Value =     +114.25 | Nodes =      15 | Time =      0.0472s | NPS =     318
+Depth 2  : Value =     +171.70 | Nodes =      15 | Time =      0.0675s | NPS =     222
+Depth 3  : Value =     +107.55 | Nodes =     591 | Time =      2.9124s | NPS =     203
+Depth 4  : Value =     +162.70 | Nodes =     259 | Time =      1.5759s | NPS =     164
+Depth 5  : Value =      +93.05 | Nodes =    2582 | Time =     18.2664s | NPS =     141
+Depth 6  : Value =      +65.00 | Nodes =    5651 | Time =     45.9581s | NPS =     123
+AI plays: a7
+
+1 . . . . . O . .
+2 . . . . O O X O
+3 . . O O X O O .
+4 . . . X X O O X
+5 . . X O X O O .
+6 . X O O X O O O
+7 X O O O O O O .
+8 . O X X X O O O
+  a b c d e f g h
+
+Current score - Black (X): 13, White (O): 28
+Last move: X played a7, flipping 3 disc(s) at: [b6, c5, d4]
+
+AI O thinking...
+Depth 1  : Value =     +137.60 | Nodes =       9 | Time =      0.0385s | NPS =     234
+Depth 2  : Value =      +96.05 | Nodes =      88 | Time =      0.5269s | NPS =     167
+Depth 3  : Value =     +104.40 | Nodes =     183 | Time =      1.3610s | NPS =     134
+Depth 4  : Value =      +89.85 | Nodes =    1333 | Time =      9.4905s | NPS =     140
+Depth 5  : Value =      +39.85 | Nodes =     540 | Time =      3.1845s | NPS =     170
+AI plays: g1
+
+1 . . . . . O O .
+2 . . . . O O O O
+3 . . O O X O O .
+4 . . . X X O O X
+5 . . X O X O O .
+6 . X O O X O O O
+7 X O O O O O O .
+8 . O X X X O O O
+  a b c d e f g h
+
+Current score - Black (X): 12, White (O): 30
+Last move: O played g1, flipping 1 disc(s) at: [g2]
+
+AI X thinking...
+Depth 1  : Value =     +113.95 | Nodes =      13 | Time =      0.0700s | NPS =     186
+Depth 2  : Value =     +163.90 | Nodes =      38 | Time =      0.2384s | NPS =     159
+Depth 3  : Value =      +87.25 | Nodes =     312 | Time =      2.0527s | NPS =     152
+Depth 4  : Value =      +79.00 | Nodes =     408 | Time =      2.7078s | NPS =     151
+Depth 5  : Value =      +35.20 | Nodes =    2890 | Time =     18.5130s | NPS =     156
+Depth 6  : Value =      +73.60 | Nodes =    4017 | Time =     26.6287s | NPS =     151
+AI plays: b5
+
+1 . . . . . O O .
+2 . . . . O O O O
+3 . . O O X O O .
+4 . . . X X O O X
+5 . X X O X O O .
+6 . X X O X O O O
+7 X O O X O O O .
+8 . O X X X O O O
+  a b c d e f g h
+
+Current score - Black (X): 15, White (O): 28
+Last move: X played b5, flipping 2 disc(s) at: [c6, d7]
+
+AI O thinking...
+Depth 1  : Value =     +125.50 | Nodes =       5 | Time =      0.0170s | NPS =     294
+Depth 2  : Value =      +78.05 | Nodes =      30 | Time =      0.2366s | NPS =     127
+Depth 3  : Value =      +27.80 | Nodes =      92 | Time =      0.7515s | NPS =     122
+Depth 4  : Value =      +32.80 | Nodes =     880 | Time =      6.1437s | NPS =     143
+Depth 5  : Value =      +18.80 | Nodes =    1145 | Time =      7.9329s | NPS =     144
+AI plays: a5
+
+1 . . . . . O O .
+2 . . . . O O O O
+3 . . O O X O O .
+4 . . . X X O O X
+5 O O O O X O O .
+6 . O X O X O O O
+7 X O O X O O O .
+8 . O X X X O O O
+  a b c d e f g h
+
+Current score - Black (X): 12, White (O): 32
+Last move: O played a5, flipping 3 disc(s) at: [b5, c5, b6]
+
+AI X thinking...
+Depth 1  : Value =      +72.05 | Nodes =      13 | Time =      0.0450s | NPS =     289
+Depth 2  : Value =      +67.40 | Nodes =      29 | Time =      0.1291s | NPS =     225
+Depth 3  : Value =      +35.00 | Nodes =     209 | Time =      1.2473s | NPS =     168
+Depth 4  : Value =      +66.60 | Nodes =     373 | Time =      2.8089s | NPS =     133
+Depth 5  : Value =      +34.40 | Nodes =    1493 | Time =     12.8565s | NPS =     116
+Depth 6  : Value =      +67.40 | Nodes =     334 | Time =      2.3176s | NPS =     144
+AI plays: c4
+
+1 . . . . . O O .
+2 . . . . O O O O
+3 . . O O X O O .
+4 . . X X X O O X
+5 O O X X X O O .
+6 . O X O X O O O
+7 X O O X O O O .
+8 . O X X X O O O
+  a b c d e f g h
+
+Current score - Black (X): 15, White (O): 30
+Last move: X played c4, flipping 2 disc(s) at: [c5, d5]
+
+AI O thinking...
+Depth 1  : Value =      +33.20 | Nodes =       3 | Time =      0.0090s | NPS =     333
+Depth 2  : Value =      +27.80 | Nodes =      43 | Time =      0.2856s | NPS =     151
+Depth 3  : Value =      +21.40 | Nodes =      78 | Time =      0.6536s | NPS =     119
+Depth 4  : Value =      +21.00 | Nodes =     269 | Time =      2.3447s | NPS =     115
+Depth 5  : Value =      +14.80 | Nodes =     446 | Time =      2.6807s | NPS =     166
+AI plays: d2
+
+1 . . . . . O O .
+2 . . . O O O O O
+3 . . O O O O O .
+4 . . X X X O O X
+5 O O X X X O O .
+6 . O X O X O O O
+7 X O O X O O O .
+8 . O X X X O O O
+  a b c d e f g h
+
+Current score - Black (X): 14, White (O): 32
+Last move: O played d2, flipping 1 disc(s) at: [e3]
+
+AI X thinking...
+Depth 1  : Value =      +31.20 | Nodes =      11 | Time =      0.0340s | NPS =     324
+Depth 2  : Value =      +58.00 | Nodes =      26 | Time =      0.1175s | NPS =     221
+Depth 3  : Value =      +25.60 | Nodes =     204 | Time =      1.5900s | NPS =     128
+Depth 4  : Value =      +67.40 | Nodes =      62 | Time =      0.2877s | NPS =     215
+Depth 5  : Value =      +25.80 | Nodes =    1450 | Time =     12.1020s | NPS =     120
+Depth 6  : Value =      +59.40 | Nodes =     723 | Time =      5.4135s | NPS =     134
+AI plays: d1
+
+1 . . . X . O O .
+2 . . . X O O O O
+3 . . O X O O O .
+4 . . X X X O O X
+5 O O X X X O O .
+6 . O X O X O O O
+7 X O O X O O O .
+8 . O X X X O O O
+  a b c d e f g h
+
+Current score - Black (X): 17, White (O): 30
+Last move: X played d1, flipping 2 disc(s) at: [d2, d3]
+
+AI O thinking...
+Depth 1  : Value =      +25.80 | Nodes =       5 | Time =      0.0150s | NPS =     333
+Depth 2  : Value =      +27.00 | Nodes =      30 | Time =      0.2238s | NPS =     134
+Depth 3  : Value =      +14.80 | Nodes =     101 | Time =      0.7432s | NPS =     136
+Depth 4  : Value =      +18.20 | Nodes =     382 | Time =      3.0338s | NPS =     126
+Depth 5  : Value =      +10.60 | Nodes =     570 | Time =      4.5734s | NPS =     125
+AI plays: c1
+
+1 . . O X . O O .
+2 . . . O O O O O
+3 . . O X O O O .
+4 . . X X X O O X
+5 O O X X X O O .
+6 . O X O X O O O
+7 X O O X O O O .
+8 . O X X X O O O
+  a b c d e f g h
+
+Current score - Black (X): 16, White (O): 32
+Last move: O played c1, flipping 1 disc(s) at: [d2]
+
+AI X thinking...
+Depth 1  : Value =      +26.20 | Nodes =      12 | Time =      0.0511s | NPS =     235
+Depth 2  : Value =      +51.40 | Nodes =      27 | Time =      0.1736s | NPS =     156
+Depth 3  : Value =      +21.20 | Nodes =     226 | Time =      1.7553s | NPS =     129
+Depth 4  : Value =      +59.40 | Nodes =     118 | Time =      0.8604s | NPS =     137
+Depth 5  : Value =      +20.80 | Nodes =    1756 | Time =     12.8141s | NPS =     137
+Depth 6  : Value =      +52.60 | Nodes =     470 | Time =      2.6936s | NPS =     174
+AI plays: c2
+
+1 . . O X . O O .
+2 . . X O O O O O
+3 . . X X O O O .
+4 . . X X X O O X
+5 O O X X X O O .
+6 . O X O X O O O
+7 X O O X O O O .
+8 . O X X X O O O
+  a b c d e f g h
+
+Current score - Black (X): 18, White (O): 31
+Last move: X played c2, flipping 1 disc(s) at: [c3]
+
+AI O thinking...
+Depth 1  : Value =      +17.20 | Nodes =       5 | Time =      0.0160s | NPS =     312
+Depth 2  : Value =      +27.20 | Nodes =      25 | Time =      0.1391s | NPS =     180
+Depth 3  : Value =      +11.00 | Nodes =      83 | Time =      0.4974s | NPS =     167
+Depth 4  : Value =      +12.00 | Nodes =     420 | Time =      2.8662s | NPS =     147
+Depth 5  : Value =       +8.60 | Nodes =     468 | Time =      3.0496s | NPS =     153
+AI plays: e1
+
+1 . . O O O O O .
+2 . . X O O O O O
+3 . . X X O O O .
+4 . . X X X O O X
+5 O O X X X O O .
+6 . O X O X O O O
+7 X O O X O O O .
+8 . O X X X O O O
+  a b c d e f g h
+
+Current score - Black (X): 17, White (O): 33
+Last move: O played e1, flipping 1 disc(s) at: [d1]
+
+AI X thinking...
+Depth 1  : Value =      +37.80 | Nodes =       7 | Time =      0.0235s | NPS =     298
+Depth 2  : Value =      +46.40 | Nodes =      18 | Time =      0.0925s | NPS =     195
+Depth 3  : Value =      +31.40 | Nodes =     177 | Time =      1.2416s | NPS =     143
+Depth 4  : Value =      +54.60 | Nodes =     104 | Time =      0.6716s | NPS =     155
+Depth 5  : Value =      +26.80 | Nodes =     960 | Time =      6.4624s | NPS =     149
+Depth 6  : Value =      +52.80 | Nodes =     528 | Time =      3.7210s | NPS =     142
+AI plays: h7
+
+1 . . O O O O O .
+2 . . X O O O O O
+3 . . X X O O O .
+4 . . X X X O O X
+5 O O X X X X O .
+6 . O X O X O X O
+7 X O O X X X X X
+8 . O X X X O O O
+  a b c d e f g h
+
+Current score - Black (X): 23, White (O): 28
+Last move: X played h7, flipping 5 disc(s) at: [g7, f7, e7, g6, f5]
+
+AI O thinking...
+Depth 1  : Value =      +16.80 | Nodes =       3 | Time =      0.0110s | NPS =     273
+Depth 2  : Value =      +19.80 | Nodes =      28 | Time =      0.1470s | NPS =     190
+Depth 3  : Value =      +11.40 | Nodes =      64 | Time =      0.3825s | NPS =     167
+Depth 4  : Value =      +15.60 | Nodes =     135 | Time =      0.8390s | NPS =     161
+Depth 5  : Value =       +6.20 | Nodes =     291 | Time =      1.8332s | NPS =     159
+AI plays: b4
+
+1 . . O O O O O .
+2 . . X O O O O O
+3 . . O X O O O .
+4 . O O O O O O X
+5 O O O X X X O .
+6 . O X O X O X O
+7 X O O X X X X X
+8 . O X X X O O O
+  a b c d e f g h
+
+Current score - Black (X): 18, White (O): 34
+Last move: O played b4, flipping 5 disc(s) at: [c4, d4, e4, c5, c3]
+
+AI X thinking...
+Depth 1  : Value =      +32.20 | Nodes =       9 | Time =      0.0300s | NPS =     300
+Depth 2  : Value =      +47.20 | Nodes =      21 | Time =      0.1080s | NPS =     194
+Depth 3  : Value =      +25.60 | Nodes =     162 | Time =      1.1053s | NPS =     147
+Depth 4  : Value =      +57.00 | Nodes =      76 | Time =      0.4220s | NPS =     180
+Depth 5  : Value =      +27.00 | Nodes =    1168 | Time =      9.8110s | NPS =     119
+Depth 6  : Value =      +48.20 | Nodes =     300 | Time =      1.6931s | NPS =     177
+AI plays: b2
+
+1 . . O O O O O .
+2 . X X O O O O O
+3 . . X X O O O .
+4 . O O X O O O X
+5 O O O X X X O .
+6 . O X O X O X O
+7 X O O X X X X X
+8 . O X X X O O O
+  a b c d e f g h
+
+Current score - Black (X): 21, White (O): 32
+Last move: X played b2, flipping 2 disc(s) at: [c3, d4]
+
+AI O thinking...
+Depth 1  : Value =      +10.80 | Nodes =       5 | Time =      0.0165s | NPS =     303
+Depth 2  : Value =      +25.80 | Nodes =      37 | Time =      0.2050s | NPS =     180
+Depth 3  : Value =       +6.20 | Nodes =      71 | Time =      0.4413s | NPS =     161
+Depth 4  : Value =      +43.20 | Nodes =     232 | Time =      1.4748s | NPS =     157
+Depth 5  : Value =       +2.00 | Nodes =     752 | Time =      5.1163s | NPS =     147
+AI plays: a3
+
+1 . . O O O O O .
+2 . O X O O O O O
+3 O . X X O O O .
+4 . O O X O O O X
+5 O O O X X X O .
+6 . O X O X O X O
+7 X O O X X X X X
+8 . O X X X O O O
+  a b c d e f g h
+
+Current score - Black (X): 20, White (O): 34
+Last move: O played a3, flipping 1 disc(s) at: [b2]
+
+AI X thinking...
+Depth 1  : Value =      +22.80 | Nodes =       9 | Time =      0.0515s | NPS =     175
+Depth 2  : Value =      +39.20 | Nodes =      20 | Time =      0.1405s | NPS =     142
+Depth 3  : Value =      +23.40 | Nodes =      94 | Time =      0.6183s | NPS =     152
+Depth 4  : Value =      +49.00 | Nodes =      62 | Time =      0.4045s | NPS =     153
+Depth 5  : Value =     +197.00 | Nodes =      27 | Time =      0.2743s | NPS =      98
+Depth 6  : Value =      +99.00 | Nodes =     102 | Time =      0.6462s | NPS =     158
+AI plays: a8
+
+1 . . O O O O O .
+2 . O X O O O O O
+3 O . X X O O O .
+4 . O O X O O O X
+5 O O O X X X O .
+6 . O X O X O X O
+7 X X O X X X X X
+8 X X X X X O O O
+  a b c d e f g h
+
+Current score - Black (X): 23, White (O): 32
+Last move: X played a8, flipping 2 disc(s) at: [b8, b7]
+
+AI O thinking...
+Depth 1  : Value =      +40.80 | Nodes =       2 | Time =      0.0080s | NPS =     250
+Depth 2  : Value =      +20.40 | Nodes =      22 | Time =      0.1136s | NPS =     194
+Depth 3  : Value =      +35.20 | Nodes =      29 | Time =      0.1870s | NPS =     155
+Depth 4  : Value =      -14.80 | Nodes =      15 | Time =      0.0885s | NPS =     169
+Depth 5  : Value =     -191.00 | Nodes =      69 | Time =      0.4561s | NPS =     151
+AI plays: b3
+
+1 . . O O O O O .
+2 . O O O O O O O
+3 O O O O O O O .
+4 . O O X O O O X
+5 O O O X X X O .
+6 . O X O X O X O
+7 X X O X X X X X
+8 X X X X X O O O
+  a b c d e f g h
+
+Current score - Black (X): 20, White (O): 36
+Last move: O played b3, flipping 3 disc(s) at: [c3, d3, c2]
+
+AI X thinking...
+Depth 1  : Value =      +22.80 | Nodes =       8 | Time =      0.0325s | NPS =     246
+Depth 2  : Value =      +50.60 | Nodes =      16 | Time =      0.0800s | NPS =     200
+Depth 3  : Value =     +389.00 | Nodes =       3 | Time =      0.0165s | NPS =     182
+Depth 4  : Value =     +195.00 | Nodes =      16 | Time =      0.0540s | NPS =     296
+Depth 5  : Value =      +98.00 | Nodes =      54 | Time =      0.3175s | NPS =     170
+Depth 6  : Value =     +132.00 | Nodes =     164 | Time =      1.0147s | NPS =     162
+AI plays: h1
+
+1 . . O O O O O X
+2 . O O O O O X O
+3 O O O O O X O .
+4 . O O X X O O X
+5 O O O X X X O .
+6 . O X O X O X O
+7 X X O X X X X X
+8 X X X X X O O O
+  a b c d e f g h
+
+Current score - Black (X): 24, White (O): 33
+Last move: X played h1, flipping 3 disc(s) at: [g2, f3, e4]
+
+AI O thinking...
+Depth 1  : Value =      +50.60 | Nodes =       1 | Time =      0.0030s | NPS =     333
+Depth 2  : Value =     -244.00 | Nodes =       5 | Time =      0.0375s | NPS =     133
+Depth 3  : Value =     -188.00 | Nodes =      17 | Time =      0.1105s | NPS =     154
+Depth 4  : Value =     -382.00 | Nodes =      42 | Time =      0.3446s | NPS =     122
+Depth 5  : Value =     -154.00 | Nodes =      54 | Time =      0.5249s | NPS =     103
+AI plays: h3
+
+1 . . O O O O O X
+2 . O O O O O O O
+3 O O O O O X O O
+4 . O O X X O O X
+5 O O O X X X O .
+6 . O X O X O X O
+7 X X O X X X X X
+8 X X X X X O O O
+  a b c d e f g h
+
+Current score - Black (X): 23, White (O): 35
+Last move: O played h3, flipping 1 disc(s) at: [g2]
+
+AI X thinking...
+Depth 1  : Value =     +190.00 | Nodes =       6 | Time =      0.0220s | NPS =     273
+Depth 2  : Value =     +194.00 | Nodes =      18 | Time =      0.1235s | NPS =     146
+Depth 3  : Value =     +151.00 | Nodes =      51 | Time =      0.4840s | NPS =     105
+Depth 4  : Value =     +132.00 | Nodes =      38 | Time =      0.2281s | NPS =     167
+Depth 5  : Value =      +66.00 | Nodes =      22 | Time =      0.1246s | NPS =     177
+Depth 6  : Value =     +185.00 | Nodes =      39 | Time =      0.2445s | NPS =     159
+AI plays: a2
+
+1 . . O O O O O X
+2 X O O O O O O O
+3 O X O O O X O O
+4 . O X X X O O X
+5 O O O X X X O .
+6 . O X O X O X O
+7 X X O X X X X X
+8 X X X X X O O O
+  a b c d e f g h
+
+Current score - Black (X): 26, White (O): 33
+Last move: X played a2, flipping 2 disc(s) at: [b3, c4]
+
+AI O thinking...
+Depth 1  : Value =     -152.00 | Nodes =       3 | Time =      0.0100s | NPS =     300
+Depth 2  : Value =     -109.00 | Nodes =      16 | Time =      0.0895s | NPS =     179
+Depth 3  : Value =     -102.00 | Nodes =      31 | Time =      0.1940s | NPS =     160
+Depth 4  : Value =     -148.00 | Nodes =      41 | Time =      0.2706s | NPS =     152
+Depth 5  : Value =       +4.00 | Nodes =      60 | Time =      0.3785s | NPS =     159
+AI plays: a1
+
+1 O . O O O O O X
+2 O O O O O O O O
+3 O X O O O X O O
+4 . O X X X O O X
+5 O O O X X X O .
+6 . O X O X O X O
+7 X X O X X X X X
+8 X X X X X O O O
+  a b c d e f g h
+
+Current score - Black (X): 25, White (O): 35
+Last move: O played a1, flipping 1 disc(s) at: [a2]
+
+AI X thinking...
+Depth 1  : Value =     +132.00 | Nodes =       4 | Time =      0.0145s | NPS =     276
+Depth 2  : Value =     +147.00 | Nodes =       8 | Time =      0.0460s | NPS =     174
+Depth 3  : Value =      +82.00 | Nodes =      19 | Time =      0.1352s | NPS =     141
+Depth 4  : Value =     +244.00 | Nodes =       7 | Time =      0.0440s | NPS =     159
+Depth 5  : Value =     +122.00 | Nodes =      14 | Time =      0.0705s | NPS =     199
+Depth 6  : Value =     +225.00 | Nodes =      16 | Time =      0.0855s | NPS =     187
+AI plays: h5
+
+1 O . O O O O O X
+2 O O O O O O O O
+3 O X O O O X O O
+4 . O X X X O X X
+5 O O O X X X X X
+6 . O X O X O X X
+7 X X O X X X X X
+8 X X X X X O O O
+  a b c d e f g h
+
+Current score - Black (X): 29, White (O): 32
+Last move: X played h5, flipping 3 disc(s) at: [h6, g5, g4]
+
+AI O thinking...
+Depth 1  : Value =      -73.00 | Nodes =       1 | Time =      0.0041s | NPS =     244
+Depth 2  : Value =     -336.00 | Nodes =       2 | Time =      0.0105s | NPS =     190
+Depth 3  : Value =      +24.00 | Nodes =       5 | Time =      0.0300s | NPS =     167
+Depth 4  : Value =     -355.00 | Nodes =       7 | Time =      0.0410s | NPS =     171
+Depth 5  : Value =     -355.00 | Nodes =       7 | Time =      0.0405s | NPS =     173
+AI plays: a4
+
+1 O . O O O O O X
+2 O O O O O O O O
+3 O O O O O X O O
+4 O O X X X O X X
+5 O O O X X X X X
+6 . O X O X O X X
+7 X X O X X X X X
+8 X X X X X O O O
+  a b c d e f g h
+
+Current score - Black (X): 28, White (O): 34
+Last move: O played a4, flipping 1 disc(s) at: [b3]
+
+AI X thinking...
+Depth 1  : Value =      +62.00 | Nodes =       2 | Time =      0.0071s | NPS =     283
+Depth 2  : Value =     +225.00 | Nodes =       2 | Time =      0.0120s | NPS =     167
+Depth 3  : Value =     +225.00 | Nodes =       5 | Time =      0.0310s | NPS =     161
+Depth 4  : Value =     +113.00 | Nodes =       4 | Time =      0.0140s | NPS =     286
+Depth 5  : Value =      +57.00 | Nodes =       4 | Time =      0.0140s | NPS =     286
+Depth 6  : Value =       +7.00 | Nodes =       5 | Time =      0.0239s | NPS =     209
+AI plays: b1
+
+1 O X X X X X X X
+2 O X X O O O O O
+3 O X O X O X O O
+4 O X X X X O X X
+5 O X O X X X X X
+6 . X X O X O X X
+7 X X O X X X X X
+8 X X X X X O O O
+  a b c d e f g h
+
+Current score - Black (X): 41, White (O): 22
+Last move: X played b1, flipping 12 disc(s) at: [c1, d1, e1, f1, g1, b2, b3, b4, b5, b6, c2, d3]
+
+AI O thinking...
+Depth 1  : Value =     +225.00 | Nodes =       1 | Time =      0.0030s | NPS =     333
+Depth 2  : Value =     +225.00 | Nodes =       1 | Time =      0.0040s | NPS =     250
+Depth 3  : Value =     +225.00 | Nodes =       1 | Time =      0.0043s | NPS =     231
+Depth 4  : Value =     +225.00 | Nodes =       1 | Time =      0.0040s | NPS =     250
+Depth 5  : Value =     +225.00 | Nodes =       1 | Time =      0.0040s | NPS =     250
+AI plays: a6
+
+1 O X X X X X X X
+2 O X X O O O O O
+3 O X O O O X O O
+4 O X O X X O X X
+5 O O O X X X X X
+6 O O O O X O X X
+7 X X O X X X X X
+8 X X X X X O O O
+  a b c d e f g h
+
+Game Over!
+Final score - Black: 36, White: 28
+
+Game log saved to othello_game_20250215_082443.json
